@@ -7,8 +7,558 @@
   </head>
   <body class="bg-absolute-black">
     <main>
+      <section>
+        <div class="cont">
+          <div
+            class="flex justify-between items-center xl:pt-[46px] xl:px-[40px] px-[16px] pt-[40px]">
+            <a class="uppercase text-[28px] md:text-[40px] text-absolute-white "
+              href="#">Excelsio</a>
+            <ul class="hidden list-none xl:flex">
+              <li><a class="nav__link rounded-tl-[12px]" href>Главная</a></li>
+              <li><a class="nav__link" href="#">Обо мне</a></li>
+              <li><a class="nav__link" href="#">Портфолио</a></li>
+              <li><a class="nav__link rounded-tr-[12px]"
+                  href="#">Сервис</a></li>
+            </ul>
+            <a href="#contact" class="!hidden xl:block btn">Контакты</a>
+            <button
+              class="flex flex-col gap-1 p-5 border xl:hidden border-dark-12 rounded-tl-[12px] items-end"
+              type="button" data-drawer-target="drawer-disable-body-scrolling"
+              data-drawer-show="drawer-disable-body-scrolling"
+              data-drawer-body-scrolling="false"><span
+                class="w-[21px] h-[1.5px] bg-absolute-white"></span><span
+                class="w-[21px] h-[1.5px] bg-absolute-white"></span><span
+                class="w-[10px] h-[1.5px] bg-absolute-white"></span></button>
+          </div>
 
-    </main>
-    <script type="module" src="/src/js/main.js"></script>
-  </body>
-</html>
+          <!-- drawer component -->
+          <div id="drawer-disable-body-scrolling"
+            class="fixed top-0 left-0 z-40 w-full h-full p-4 transition-transform -translate-x-full ovemask-r-from-yellow-300-y-auto sm:px-10 bg-dark-06 xl:hidden"
+            tabindex="-1" aria-labelledby="drawer-disable-body-scrolling-label">
+            <h5 id="drawer-disable-body-scrolling-label"
+              class="text-base font-semibold text-gray-500 uppercase dark:text-gray-400">Меню</h5>
+            <button type="button"
+              data-drawer-hide="drawer-disable-body-scrolling"
+              aria-controls="drawer-disable-body-scrolling"
+              class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 absolute top-2.5 end-2.5 inline-flex items-center justify-center dark:hover:bg-gray-600 dark:hover:text-white">
+              <svg class="w-3 h-3" aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg" fill="none"
+                viewBox="0 0 14 14">
+                <path stroke="currentColor" stroke-linecap="round"
+                  stroke-linejoin="round" stroke-width="2"
+                  d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6" />
+              </svg>
+              <span class="sr-only">Close menu</span>
+            </button>
+            <div class="py-10 overflow-y-auto">
+              <ul class="mt-5 space-y-10 font-medium">
+                <li><a class="menu__link" href>Главная</a></li>
+                <li><a class="menu__link" href="#">Обо мне</a></li>
+                <li><a class="menu__link" href="#">Портфолио</a></li>
+                <li><a class="menu__link"
+                    href="#">Сервис</a></li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+      </section>
+      <section>
+        <div class="cont">
+          <div
+            class="flex flex-col justify-between xl:flex-row mt-[40px] xl:mt-0">
+            <div class="xl:pt-[90px] xl:px-[40px]"><h1
+                class="font-medium uppercase text-[22px] text-grey-40 text-center hd:text-left">Мой
+                взгляд на красоту вокруг</h1>
+              <h2
+                class="font-semibold uppercase text-[40px] md:text-[80px] text-grey-90 text-center hd:text-left">Excelsio</h2>
+            </div>
+            <svg class="hidden xl:block" width="346" height="328"
+              viewBox="0 0 346 328" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <mask id="mask0_83_2154" style="mask-type:luminance"
+                maskUnits="userSpaceOnUse" x="0" y="-9" width="346"
+                height="346">
+                <path d="M346 -9H0V337H346V-9Z" fill="white" />
+              </mask>
+              <g mask="url(#mask0_83_2154)">
+                <path
+                  d="M173 164.5C268.102 164.5 345.227 241.462 345.497 336.5H325.737C325.468 252.374 257.189 184.26 173 184.26C88.8107 184.26 20.5323 252.374 20.2627 336.5H0.50293C0.772607 241.462 77.8976 164.5 173 164.5ZM173 206.02C245.172 206.02 303.708 264.391 303.978 336.5H284.217C283.947 275.305 234.258 225.78 173 225.78C111.742 225.78 62.0526 275.305 61.7832 336.5H42.0225C42.292 264.391 100.829 206.02 173 206.02ZM173 247.54C222.241 247.54 262.188 287.322 262.457 336.5H242.697C242.428 298.237 211.327 267.3 173 267.3C134.673 267.3 103.572 298.237 103.303 336.5H83.543C83.8121 287.322 123.759 247.54 173 247.54ZM20.2627 -8.5C20.5323 75.6261 88.8107 143.74 173 143.74C257.189 143.74 325.468 75.6261 325.737 -8.5H345.497C345.23 85.7955 269.304 162.295 175.229 163.486L173 163.5L170.771 163.486C76.6951 162.295 0.770483 85.7955 0.50293 -8.5H20.2627ZM61.7832 -8.5C62.0526 52.6951 111.742 102.22 173 102.22C234.258 102.22 283.947 52.6951 284.217 -8.5H303.978C303.708 63.6082 245.172 121.98 173 121.98C100.829 121.98 42.2919 63.6082 42.0225 -8.5H61.7832ZM103.303 -8.5C103.572 29.7641 134.673 60.7002 173 60.7002C211.327 60.7002 242.428 29.7641 242.697 -8.5H262.457C262.188 40.6773 222.241 80.46 173 80.46C123.759 80.46 83.8121 40.6773 83.543 -8.5H103.303Z"
+                  fill="#0E0E10" stroke="#1C1C21" />
+              </g>
+            </svg>
+            <div class="xl:pt-[80px]">
+              <div class="flex gap-[10px] mt-5 justify-center hd:justify-start">
+                <div
+                  class="font-semibold text-[58px] text-absolute-white uppercase">Go</div>
+                <a href="https://t.me/ExceIsio" target="_blank"
+                  class="w-[130px] h-[66px] rounded-full flex items-center justify-center bg-purple-55 text-absolute-white"><span
+                    class="transform rotate-45">↑</span></a>
+              </div>
+              <div
+                class="font-semibold text-[40px] text-absolute-white uppercase text-center hd:text-left">Работать
+                вместе</div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class>
+        <div
+          class="mt-10 overflow-hidden marquee-container whitespace-nowrap bg-dark-08 text-purple-90 hd:mt-0">
+          <div class="inline-flex marquee-track animate-marquee">
+            <ul class="flex py-4 uppercase list-none bg-dark-06 gap-[40px]">
+              <li class="decor__list"><img src="src/icon/star.svg" alt="star">
+                Вёрстка
+                красивых сайтов</li>
+              <li class="decor__list"><img src="src/icon/star.svg" alt="star">
+                Tailwind
+                CSS</li>
+              <li class="decor__list"><img src="src/icon/star.svg" alt="star">
+                SASS</li>
+              <li class="decor__list"><img src="src/icon/star.svg" alt="star">
+                CSS</li>
+              <li class="decor__list"><img src="src/icon/star.svg" alt="star">
+                JavaScript</li>
+              <li class="decor__list"><img src="src/icon/star.svg" alt="star">
+                Python</li>
+              <li class="decor__list"><img src="src/icon/star.svg" alt="star">
+                Анимации, адаптив</li>
+              <li class="decor__list"><img src="src/icon/star.svg" alt="star">
+                Дизайн
+                с
+                вниманием к деталям</li>
+              <li class="decor__list"><img src="src/icon/star.svg" alt="star">
+                Фотосъёмка предметов</li>
+              <li class="decor__list"><img src="src/icon/star.svg" alt="star">
+                Фото
+                как
+                стиль и брендинг</li>
+              <li class="decor__list"><img src="src/icon/star.svg" alt="star">
+                Атмосферные кадры с людьми</li>
+              <li class="decor__list"><img src="src/icon/star.svg" alt="star">
+                Уличная съёмка</li>
+              <li class="decor__list"></li>
+            </ul>
+            <!-- Дубликат -->
+            <ul
+              class="flex items-center gap-6 uppercase list-none bg-dark-06 gap-[40px]"
+              aria-hidden="true">
+              <li class="decor__list"><img src="src/icon/star.svg" alt="star">
+                Вёрстка
+                красивых сайтов</li>
+              <li class="decor__list"><img src="src/icon/star.svg" alt="star">
+                Tailwind
+                CSS</li>
+              <li class="decor__list"><img src="src/icon/star.svg" alt="star">
+                SASS</li>
+              <li class="decor__list"><img src="src/icon/star.svg" alt="star">
+                CSS</li>
+              <li class="decor__list"><img src="src/icon/star.svg" alt="star">
+                JavaScript</li>
+              <li class="decor__list"><img src="src/icon/star.svg" alt="star">
+                Python</li>
+              <li class="decor__list"><img src="src/icon/star.svg" alt="star">
+                Анимации, адаптив</li>
+              <li class="decor__list"><img src="src/icon/star.svg" alt="star">
+                Дизайн
+                с
+                вниманием к деталям</li>
+              <li class="decor__list"><img src="src/icon/star.svg" alt="star">
+                Фотосъёмка предметов</li>
+              <li class="decor__list"><img src="src/icon/star.svg" alt="star">
+                Фото
+                как
+                стиль и брендинг</li>
+              <li class="decor__list"><img src="src/icon/star.svg" alt="star">
+                Атмосферные кадры с людьми</li>
+              <li class="decor__list"><img src="src/icon/star.svg" alt="star">
+                Уличная съёмка</li>
+              <li class="decor__list"></li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="cont">
+          <picture>
+            <source srcset="/src/img/bg_mobile.webp" media="(max-width: 767px)">
+            <img src="/src/img/bg.webp" alt="bg" class="w-full h-auto">
+          </picture>
+        </div>
+      </section>
+
+      <section
+        class="section">
+        <div class="cont">
+          <div
+            class="flex hd:flex-row flex-col flex-wrap items-center justify-between gap-[20px] border-b-[1px] border-dark-12 pb-[20px] hd:pb-[40px] 4k:pb-[50px]">
+            <div class>
+              <h2
+                class="page__title">Обо
+                мне</h2>
+              <h3
+                class="page__subtitle">Меня
+                зовут Александр</h3>
+            </div>
+            <a href="#" class="block btn">Подробнее →</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="pt-[40px] hd:pt-[50px] 4k:pt-[60px]">
+        <div class="cont">
+          <div
+            class="flex gap-[20px] flex-col lg:flex-row justify-between lg:items-start items-center">
+            <img class="max-h-[600px]" src="/src/img/i_mob.webp" alt="i">
+
+            <div
+              class="border border-dark-12 rounded-[20px] relative overflow-hidden">
+              <div
+                class="4k:p-[40px] hd:p-[30px] p-[24px]">
+                <div class="flex gap-[10px]"><img src="/src/icon/star_min.svg"
+                    alt="star"><h4
+                    class="font-medium text-[20px] text-grey-80 hd:text-[24px] 4k:text-[30px]">Моё
+                    дело</h4></div>
+                <p
+                  class="font-normal text-[14px] text-grey-70 md:text-[16px] 4k:text-[18px] mt-[12px] hd:mt-[16px] 4k:mt-[20px]">Моё
+                  увлечение
+                  фотографией — это не погоня за идеалом, а
+                  стремление заметить красоту в обычном. Я ловлю моменты,
+                  которые могут ускользнуть за секунду, и сохраняю их такими,
+                  какими вижу сам. Это не про технику — это про взгляд.
+
+                  Я снимаю на телефон, без постановки, без шаблонов. Кадры,
+                  которые рождаются по пути, в тишине, в движении, в живом
+                  свете. Всё, что попадает в объектив, становится частью моего
+                  мира.
+
+                  Этот проект — не просто портфолио. Это визуальный дневник.
+                  Здесь — и фото, и сайты, и кусочки моей жизни. Добро
+                  пожаловать.</p>
+              </div>
+              <div class="4k:p-[40px] hd:p-[30px] p-[24px]">
+                <div class="flex gap-[10px]"><img src="/src/icon/star_min.svg"
+                    alt="star"><h4
+                    class="font-medium text-[20px] text-grey-80 hd:text-[24px] 4k:text-[30px]">Можешь
+                    просто написать</h4></div>
+                <div
+                  class="flex hd:gap-[120px] hd:flex-row flex-col gap-[12px] mt-[20px] md:mt-[30px] 4k:mt-[40px]">
+                  <div class>
+                    <div
+                      class="text-[14px] text-grey-90 font-medium md:text-[16px] 4k:text-[18px]">Telegram</div>
+                    <a
+                      class="font-normal 4k:text-[20px] text-grey-70 md:text-[18px] text-[16px] 4k:mt-[10px] md:mt-[6px] mt-[2px]"
+                      href="https://t.me/ExceIsio">@ExceIsio</a>
+                  </div>
+                  <div class>
+                    <div
+                      class="text-[14px] text-grey-90 font-medium md:text-[16px] 4k:text-[18px]">Номер</div>
+                    <a
+                      class="font-normal 4k:text-[20px] text-grey-70 md:text-[18px] text-[16px] 4k:mt-[10px] md:mt-[6px] mt-[2px]"
+                      href="tel:+79966064607">+7 (996) 606-46-07</a>
+                  </div>
+                </div>
+                <a class="btn !mt-[30px] text-center" href="#">Канал</a>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="overflow-hidden section">
+        <div class="cont">
+          <!-- Заголовок и кнопки -->
+          <div class="flex items-end justify-between bar">
+            <div>
+              <h2 class="page__title">Работы</h2>
+              <h3 class="page__subtitle">Web Projects</h3>
+            </div>
+            <div class="relative flex gap-4 arrow__wrap">
+              <button class="arrow arrow-prev pb-[2.5px] pr-[2.5px]"
+                aria-label="Предыдущий слайд">‹</button>
+              <button class="arrow arrow-next pb-[2.5px] pl-[2.5px]"
+                aria-label="Следующий слайд">›</button>
+            </div>
+          </div>
+
+          <!-- Слайдер -->
+          <div class="relative lg:mt-[20px] 4k:[30px]">
+            <div class="swiper project__swiper !overflow-hidden">
+              <div class="swiper-wrapper">
+                <!-- Слайд 1 -->
+                <div class="px-2 swiper-slide">
+                  <a href="#"
+                    class="flex flex-col lg:flex-row items-center w-full rounded-[20px] overflow-hidden bg-absolute-black pt-[40px] hd:pt-[60px] 4k:pt-[80px] gap-[50px]">
+                    <div
+                      class="flex flex-col justify-between order-2 leading-normal text-grey-70 lg:w-1/2 lg:order-1 h-[100%]">
+                      <h5 class="text-2xl font-bold text-absolute-white">
+                        TATWOOD — столярная мастерская
+                      </h5>
+
+                      <h6
+                        class="decor__list mt-[30px] xl:mt-[40px] 4k:mt-[50px] flex items-center gap-2">
+                        <img class="w-[20px] h-[20px]" src="/src/icon/star.svg"
+                          alt="star" />
+                        Описание:
+                      </h6>
+                      <p class="pl-[30px] text">
+                        Многостраничный сайт с тёплой атмосферой дерева и
+                        минималистичной подачей. Всё построено так, чтобы
+                        подчеркнуть индивидуальность клиента и сделать навигацию
+                        максимально понятной.
+                      </p>
+
+                      <h6 class="flex items-center gap-2 mt-3 decor__list">
+                        <img class="w-[20px] h-[20px]" src="/src/icon/star.svg"
+                          alt="star" />
+                        Технологии:
+                      </h6>
+                      <p class="pl-[30px] text">
+                        HTML, SCSS, JavaScript, UIkit, Swiper, Lightbox, PHP,
+                        Telegram API, кастомная админка.
+                      </p>
+
+                      <h6
+                        class="flex items-center gap-2 mt-3 decor__list not-visited">
+                        <img class="w-[20px] h-[20px]" src="/src/icon/star.svg"
+                          alt="star" />
+                        Что внутри:
+                      </h6>
+                      <p class="pl-[20px] text">
+                        • Адаптивный дизайн под все устройства<br>
+                        • Слайдеры с отзывами и галереей работ<br>
+                        • Удобная админка без сторонних CMS<br>
+                        • SEO-структура: метатеги, микроразметка, sitemap<br>
+                        • Интеграция формы с Telegram-ботом напрямую
+                      </p>
+
+                      <p class="mt-5 text-sm italic text-grey-50 pl-[10px]">
+                        Коммерческий проект, выполненный самостоятельно без
+                        шаблонов и CMS. Реализована полная архитектура под
+                        задачи клиента.
+                      </p>
+                    </div>
+                    <img class="web__img" src="/src/img/tatwood.png"
+                      alt="TATWOOD">
+                  </a>
+                </div>
+
+                <!-- Слайд 2 -->
+                <div class="px-2 swiper-slide">
+                  <a href="#"
+                    class="flex flex-col lg:flex-row items-center w-full rounded-[20px] overflow-hidden bg-absolute-black pt-[40px] hd:pt-[60px] 4k:pt-[80px] gap-[50px]">
+
+                    <div
+                      class="flex flex-col justify-between order-2 leading-normal text-grey-70 lg:w-1/2 lg:order-1 h-[100%]">
+                      <h5 class="text-2xl font-bold text-absolute-white">
+                        Sweaterlyana — магазин уютных свитеров
+                      </h5>
+
+                      <h6
+                        class="decor__list mt-[30px] xl:mt-[40px] 4k:mt-[50px] flex items-center gap-2">
+                        <img class="w-[20px] h-[20px]" src="/src/icon/star.svg"
+                          alt="star" />
+                        Описание:
+                      </h6>
+                      <p class="pl-[30px] text">
+                        Лендинг для интернет-магазина тёплой и уютной одежды
+                        ручной работы. Визуально оформлен с душой, чтобы
+                        передавать атмосферу домашнего тепла и заботы.
+                      </p>
+
+                      <h6 class="flex items-center gap-2 mt-3 decor__list">
+                        <img class="w-[20px] h-[20px]" src="/src/icon/star.svg"
+                          alt="star" />
+                        Технологии:
+                      </h6>
+                      <p class="pl-[30px] text">
+                        HTML, Sass, jQuery, кастомная jQuery-карусель, PHP
+                        (Mailer), отправка заявок на почту.
+                      </p>
+
+                      <h6
+                        class="flex items-center gap-2 mt-3 decor__list not-visited">
+                        <img class="w-[20px] h-[20px]" src="/src/icon/star.svg"
+                          alt="star" />
+                        Что внутри:
+                      </h6>
+                      <p class="pl-[20px] text">
+                        • Уютный адаптивный дизайн<br>
+                        • Карусель с изделиями на jQuery<br>
+                        • Форма с валидацией и отправкой писем<br>
+                        • Минимум зависимостей, максимум индивидуальности<br>
+                        • Всё сверстано вручную без фреймворков
+                      </p>
+
+                      <p class="mt-5 text-sm italic text-grey-50 pl-[10px]">
+                        Pet-проект для портфолио. Сайт разработан вручную без
+                        шаблонов и UI-библиотек.
+                      </p>
+                    </div>
+                    <img
+                      class="web__img"
+                      src="/src/img/SweaterLyana.png" alt>
+                  </a>
+                </div>
+
+                <!-- Слайд 3 -->
+                <div class="px-2 swiper-slide">
+                  <a href="#"
+                    class="flex flex-col lg:flex-row items-center w-full rounded-[20px] overflow-hidden bg-absolute-black pt-[40px] hd:pt-[60px] 4k:pt-[80px] gap-[50px]">
+
+                    <div
+                      class="flex flex-col justify-between order-2 leading-normal text-grey-70 lg:w-1/2 lg:order-1 h-[100%]">
+                      <h5 class="text-2xl font-bold text-absolute-white">
+                        Excelsio Moments — фотогалерея
+                      </h5>
+
+                      <h6
+                        class="decor__list mt-[30px] xl:mt-[40px] 4k:mt-[50px] flex items-center gap-2">
+                        <img class="w-[20px] h-[20px]" src="/src/icon/star.svg"
+                          alt="star" />
+                        Описание:
+                      </h6>
+                      <p class="pl-[30px] text">
+                        Минималистичный сайт-витрина для демонстрации фоторабот.
+                        Создан для быстрой загрузки, удобного просмотра и
+                        перехода в Telegram-канал с полным архивом съёмок.
+                      </p>
+
+                      <h6 class="flex items-center gap-2 mt-3 decor__list">
+                        <img class="w-[20px] h-[20px]" src="/src/icon/star.svg"
+                          alt="star" />
+                        Технологии:
+                      </h6>
+                      <p class="pl-[30px] text">
+                        HTML, CSS
+                      </p>
+
+                      <h6
+                        class="flex items-center gap-2 mt-3 decor__list not-visited">
+                        <img class="w-[20px] h-[20px]" src="/src/icon/star.svg"
+                          alt="star" />
+                        Что внутри:
+                      </h6>
+                      <p class="pl-[20px] text">
+                        • Лёгкая адаптивная вёрстка<br>
+                        • Фокус на фотографиях без визуального шума<br>
+                        • Ультраминималистичный интерфейс<br>
+                        • Быстрая загрузка за счёт отсутствия фреймворков<br>
+                        • Интеграция с Telegram-каналом
+                      </p>
+
+                      <p class="mt-5 text-sm italic text-grey-50 pl-[10px]">
+                        Личный проект. Сделан для себя, с вниманием к эстетике и
+                        удобству.
+                      </p>
+                    </div>
+                    <img
+                      class="web__img"
+                      src="/src/img/excelsio-moments.png"
+                      alt="Excelsio Moments">
+                  </a>
+                </div>
+
+                <div class="px-2 swiper-slide">
+                  <div
+                    class="flex flex-col lg:flex-row items-center w-full rounded-[20px] overflow-hidden bg-absolute-black pt-[40px] hd:pt-[60px] 4k:pt-[80px] gap-[50px]">
+                    <div
+                      class="flex flex-col justify-center order-2 leading-normal text-grey-70 lg:w-1/2 lg:order-1 h-[100%]">
+                      <h5 class="text-2xl font-bold text-absolute-white">
+                        ...и ещё множество pet-проектов
+                      </h5>
+
+                      <p class="mt-[30px] pl-[10px] text">
+                        Каждый из них — это не просто тренировка навыков, а
+                        способ выразить стиль, атмосферу и внимание к деталям. Я
+                        делаю сайты, в которые вкладываю душу — от идеи до
+                        адаптива.
+                      </p>
+
+                      <p class="mt-5 text-sm italic text-grey-50 pl-[10px]">
+                        Лэндинги, галереи, промо-страницы, эксперименты с
+                        анимацией, прокачка визуального языка — всё это часть
+                        моего пути как разработчика и творца.
+                      </p>
+
+                      <img
+                        class="mt-[100px] md:hidden rounded-[20px] max-h-[200px] object-cover"
+                        src="/src/img/image.png" alt="prog">
+                    </div>
+                    <img
+                      class="object-cover w-full h-full web__img lg:w-1/2"
+                      src="/src/img/pet-cover.jpg"
+                      alt="pet projects preview">
+                  </div>
+                </div>
+
+              </div>
+              <!-- <div class="relative flex gap-4 arrow__wrap md:hidden">
+                <button class="arrow arrow-prev"
+                  aria-label="Предыдущий слайд">‹</button>
+                <button class="arrow arrow-next"
+                  aria-label="Следующий слайд">›</button>
+              </div> -->
+            </div>
+
+          </div>
+        </section>
+
+        <section class="overflow-hidden section">
+          <div class="cont">
+            <!-- Заголовок и кнопки -->
+            <div class="flex items-end justify-between bar">
+              <div>
+                <h2 class="page__title">Фото</h2>
+                <h3 class="page__subtitle">Мир через мой объектив</h3>
+              </div>
+              <div class="relative flex gap-4 arrow__wrap">
+                <button class="arrow arrow-prev_gallery pb-[2.5px] pr-[2.5px]"
+                  aria-label="Предыдущий слайд">‹</button>
+                <button class="arrow arrow-next_gallery pb-[2.5px] pl-[2.5px]"
+                  aria-label="Следующий слайд">›</button>
+              </div>
+            </div>
+
+            <!-- Слайдер -->
+            <div class="relative lg:mt-[20px] 4k:[30px]">
+              <div class="swiper gallery__swiper !overflow-hidden">
+                <div class="swiper-wrapper">
+                  <!-- Слайд 1 -->
+                  <div class="px-2 swiper-slide">
+                    <img class="gallery__img" src="/src/img/photo1.jpg" alt>
+                  </div>
+                  <div class="px-2 swiper-slide">
+                    <img class="gallery__img" src="/src/img/photo2.jpg" alt>
+                  </div>
+                  <div class="px-2 swiper-slide">
+                    <img class="gallery__img" src="/src/img/photo3.jpg" alt>
+                  </div>
+                  <div class="px-2 swiper-slide">
+                    <img class="gallery__img" src="/src/img/photo4.jpg" alt>
+                  </div>
+                  <div class="px-2 swiper-slide">
+                    <img class="gallery__img" src="/src/img/photo5.jpg" alt>
+                  </div>
+                  <div class="px-2 swiper-slide">
+                    <img class="gallery__img" src="/src/img/photo6.jpg" alt>
+                  </div>
+                </div>
+              </div>
+              <!-- <div class="relative flex gap-4 arrow__wrap md:hidden">
+                <button class="arrow arrow-prev"
+                  aria-label="Предыдущий слайд">‹</button>
+                <button class="arrow arrow-next"
+                  aria-label="Следующий слайд">›</button>
+              </div> -->
+            </div>
+
+          </div>
+        </section>
+
+      </main>
+
+      <script type="module" src="/src/js/main.js"></script>
+    </body>
+  </html>
