@@ -14,926 +14,112 @@
     <title>Excelsio Moments</title>
   </head>
   <body class=" bg-absolute-black">
-    <main>
-      <section id="main">
-        <div class="cont">
-          <div
-            class="flex justify-between items-center xl:pt-[46px] xl:px-[40px] px-[16px] pt-[40px]">
-            <a class="uppercase text-[28px] md:text-[40px] text-absolute-white "
-              href="#main">Excelsio</a>
-            <ul class="hidden list-none xl:flex">
-              <li><a class="nav__link rounded-tl-[12px]"
-                  href="#main">Главная</a></li>
-              <li><a class="nav__link" href="#main__contacts">Обо мне</a></li>
-              <li><a class="nav__link" href="#work">Работы</a></li>
-              <li><a class="nav__link rounded-tr-[12px]"
-                  href="#faq">Faq</a></li>
-            </ul>
-            <a href="#main__contacts" class="hidden xl:block btn">Контакты</a>
-            <button
-              class="flex flex-col gap-1 p-5 border xl:hidden border-dark-12 rounded-tl-[12px] items-end"
-              type="button" data-drawer-target="drawer-disable-body-scrolling"
-              data-drawer-show="drawer-disable-body-scrolling"
-              data-drawer-body-scrolling="false"><span
-                class="w-[21px] h-[1.5px] bg-absolute-white"></span><span
-                class="w-[21px] h-[1.5px] bg-absolute-white"></span><span
-                class="w-[10px] h-[1.5px] bg-absolute-white"></span></button>
-          </div>
-
-          <!-- drawer component -->
-          <div id="drawer-disable-body-scrolling"
-            class="fixed top-0 left-0 z-40 w-full h-full p-4 transition-transform -translate-x-full ovemask-r-from-yellow-300-y-auto sm:px-10 bg-dark-06 xl:hidden"
-            tabindex="-1" aria-labelledby="drawer-disable-body-scrolling-label">
-            <h5 id="drawer-disable-body-scrolling-label"
-              class="text-base font-semibold text-gray-500 uppercase dark:text-gray-400">Меню</h5>
-            <button type="button"
-              data-drawer-hide="drawer-disable-body-scrolling"
-              aria-controls="drawer-disable-body-scrolling"
-              class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 absolute top-2.5 end-2.5 inline-flex items-center justify-center dark:hover:bg-gray-600 dark:hover:text-white">
-              <svg class="w-3 h-3" aria-hidden="true"
-                xmlns="http://www.w3.org/2000/svg" fill="none"
-                viewBox="0 0 14 14">
-                <path stroke="currentColor" stroke-linecap="round"
-                  stroke-linejoin="round" stroke-width="2"
-                  d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6" />
-              </svg>
-              <span class="sr-only">Close menu</span>
-            </button>
-            <div class="py-10 overflow-y-auto">
-              <ul class="mt-5 space-y-10 font-medium">
-                <li><a class="menu__link" href="main">Главная</a></li>
-                <li><a class="menu__link" href="#main__contacts">Обо
-                    мне</a></li>
-                <li><a class="menu__link" href="#work">Работы</a></li>
-                <li><a class="menu__link"
+    <main class="wrapper will">
+      <div class="content will">
+        <section id="main">
+          <div class="cont">
+            <div
+              class="flex justify-between items-center xl:pt-[46px] xl:px-[40px] px-[16px] pt-[40px]">
+              <a
+                class="uppercase text-[28px] md:text-[40px] text-absolute-white "
+                href="#main">Excelsio</a>
+              <ul class="hidden list-none xl:flex">
+                <li><a class="nav__link rounded-tl-[12px]"
+                    href="#main">Главная</a></li>
+                <li><a class="nav__link" href="#main__contacts">Обо мне</a></li>
+                <li><a class="nav__link" href="#work">Работы</a></li>
+                <li><a class="nav__link rounded-tr-[12px]"
                     href="#faq">Faq</a></li>
               </ul>
+              <a href="#main__contacts" class="hidden xl:block btn">Контакты</a>
+              <button
+                class="flex flex-col gap-1 p-5 border xl:hidden border-dark-12 rounded-tl-[12px] items-end"
+                type="button" data-drawer-target="drawer-disable-body-scrolling"
+                data-drawer-show="drawer-disable-body-scrolling"
+                data-drawer-body-scrolling="false"><span
+                  class="w-[21px] h-[1.5px] bg-absolute-white"></span><span
+                  class="w-[21px] h-[1.5px] bg-absolute-white"></span><span
+                  class="w-[10px] h-[1.5px] bg-absolute-white"></span></button>
             </div>
-          </div>
 
-        </div>
-      </section>
-      <section>
-        <div class="cont">
-          <div
-            class="flex flex-col justify-between xl:flex-row mt-[40px] xl:mt-0">
-            <div
-              class="xl:pt-[90px] xl:px-[40px]" data-aos="fade-right"><h1
-                class="font-medium uppercase text-[22px] text-grey-40 text-center hd:text-left">Мой
-                взгляд на красоту вокруг</h1>
-              <h2
-                class="font-semibold uppercase text-[40px] md:text-[80px] text-grey-90 text-center hd:text-left">Excelsio</h2>
-            </div>
-            <svg class="hidden xl:block" width="346" height="328"
-              viewBox="0 0 346 328" fill="none"
-              xmlns="http://www.w3.org/2000/svg">
-              <mask id="mask0_83_2154" style="mask-type:luminance"
-                maskUnits="userSpaceOnUse" x="0" y="-9" width="346"
-                height="346">
-                <path d="M346 -9H0V337H346V-9Z" fill="white" />
-              </mask>
-              <g mask="url(#mask0_83_2154)">
-                <path
-                  d="M173 164.5C268.102 164.5 345.227 241.462 345.497 336.5H325.737C325.468 252.374 257.189 184.26 173 184.26C88.8107 184.26 20.5323 252.374 20.2627 336.5H0.50293C0.772607 241.462 77.8976 164.5 173 164.5ZM173 206.02C245.172 206.02 303.708 264.391 303.978 336.5H284.217C283.947 275.305 234.258 225.78 173 225.78C111.742 225.78 62.0526 275.305 61.7832 336.5H42.0225C42.292 264.391 100.829 206.02 173 206.02ZM173 247.54C222.241 247.54 262.188 287.322 262.457 336.5H242.697C242.428 298.237 211.327 267.3 173 267.3C134.673 267.3 103.572 298.237 103.303 336.5H83.543C83.8121 287.322 123.759 247.54 173 247.54ZM20.2627 -8.5C20.5323 75.6261 88.8107 143.74 173 143.74C257.189 143.74 325.468 75.6261 325.737 -8.5H345.497C345.23 85.7955 269.304 162.295 175.229 163.486L173 163.5L170.771 163.486C76.6951 162.295 0.770483 85.7955 0.50293 -8.5H20.2627ZM61.7832 -8.5C62.0526 52.6951 111.742 102.22 173 102.22C234.258 102.22 283.947 52.6951 284.217 -8.5H303.978C303.708 63.6082 245.172 121.98 173 121.98C100.829 121.98 42.2919 63.6082 42.0225 -8.5H61.7832ZM103.303 -8.5C103.572 29.7641 134.673 60.7002 173 60.7002C211.327 60.7002 242.428 29.7641 242.697 -8.5H262.457C262.188 40.6773 222.241 80.46 173 80.46C123.759 80.46 83.8121 40.6773 83.543 -8.5H103.303Z"
-                  fill="#0E0E10" stroke="#1C1C21" />
-              </g>
-            </svg>
-            <div class="xl:pt-[80px]">
-              <div class="flex gap-[10px] mt-5 justify-center hd:justify-start">
-                <div
-                  class="font-semibold text-[58px] text-absolute-white uppercase">Go</div>
-                <a href="https://t.me/ExceIsio" target="_blank"
-                  class="w-[130px] h-[66px] rounded-full flex items-center justify-center bg-purple-55 text-absolute-white"><span
-                    class="transform rotate-45">↑</span></a>
-              </div>
-              <div
-                class="font-semibold text-[40px] text-absolute-white uppercase text-center hd:text-left">Работать
-                вместе</div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class>
-        <div
-          class="mt-10 overflow-hidden marquee-container whitespace-nowrap bg-dark-08 text-purple-90 hd:mt-0">
-          <div class="inline-flex marquee-track animate-marquee">
-            <ul class="flex py-4 uppercase list-none bg-dark-06 gap-[40px]">
-              <li class="decor__list"><img src="src/icon/star.svg" alt="star">
-                Вёрстка
-                красивых сайтов</li>
-              <li class="decor__list"><img src="src/icon/star.svg" alt="star">
-                Tailwind
-                CSS</li>
-              <li class="decor__list"><img src="src/icon/star.svg" alt="star">
-                SASS</li>
-              <li class="decor__list"><img src="src/icon/star.svg" alt="star">
-                CSS</li>
-              <li class="decor__list"><img src="src/icon/star.svg" alt="star">
-                JavaScript</li>
-              <li class="decor__list"><img src="src/icon/star.svg" alt="star">
-                Python</li>
-              <li class="decor__list"><img src="src/icon/star.svg" alt="star">
-                Анимации</li>
-              <li class="decor__list"><img src="src/icon/star.svg" alt="star">
-                Адаптив</li>
-              <li class="decor__list"><img src="src/icon/star.svg" alt="star">
-                Дизайн
-                с
-                вниманием к деталям</li>
-              <li class="decor__list"><img src="src/icon/star.svg" alt="star">
-                Фотосъёмка предметов</li>
-              <li class="decor__list"><img src="src/icon/star.svg" alt="star">
-                Фото
-                как
-                стиль и брендинг</li>
-              <li class="decor__list"><img src="src/icon/star.svg" alt="star">
-                Атмосферные кадры с людьми</li>
-              <li class="decor__list"><img src="src/icon/star.svg" alt="star">
-                Уличная съёмка</li>
-              <li class="decor__list"></li>
-            </ul>
-            <!-- Дубликат -->
-            <ul
-              class="flex items-center gap-6 uppercase list-none bg-dark-06 gap-[40px]"
-              aria-hidden="true">
-              <li class="decor__list"><img src="src/icon/star.svg" alt="star">
-                Вёрстка
-                красивых сайтов</li>
-              <li class="decor__list"><img src="src/icon/star.svg" alt="star">
-                Tailwind
-                CSS</li>
-              <li class="decor__list"><img src="src/icon/star.svg" alt="star">
-                SASS</li>
-              <li class="decor__list"><img src="src/icon/star.svg" alt="star">
-                CSS</li>
-              <li class="decor__list"><img src="src/icon/star.svg" alt="star">
-                JavaScript</li>
-              <li class="decor__list"><img src="src/icon/star.svg" alt="star">
-                Python</li>
-              <li class="decor__list"><img src="src/icon/star.svg" alt="star">
-                Анимации</li>
-              <li class="decor__list"><img src="src/icon/star.svg" alt="star">
-                Адаптив</li>
-              <li class="decor__list"><img src="src/icon/star.svg" alt="star">
-                Дизайн
-                с
-                вниманием к деталям</li>
-              <li class="decor__list"><img src="src/icon/star.svg" alt="star">
-                Фотосъёмка предметов</li>
-              <li class="decor__list"><img src="src/icon/star.svg" alt="star">
-                Фото
-                как
-                стиль и брендинг</li>
-              <li class="decor__list"><img src="src/icon/star.svg" alt="star">
-                Атмосферные кадры с людьми</li>
-              <li class="decor__list"><img src="src/icon/star.svg" alt="star">
-                Уличная съёмка</li>
-              <li class="decor__list"></li>
-            </ul>
-          </div>
-        </div>
-      </section>
-      <section>
-        <div class="cont">
-          <picture>
-            <source
-              srcset="https://ik.imagekit.io/Excelsio/new-excelsio-moments/bg_mobile.webp?updatedAt=1749394858875"
-              media="(max-width: 767px)">
-            <img
-              src="https://ik.imagekit.io/Excelsio/new-excelsio-moments/bg.webp?updatedAt=1749394859655"
-              alt="bg" class="w-full h-auto">
-          </picture>
-        </div>
-      </section>
-
-      <section
-        class="section">
-        <div class="cont">
-          <div
-            class="flex hd:flex-row flex-col flex-wrap items-center justify-between gap-[20px] border-b-[1px] border-dark-12 pb-[20px] hd:pb-[40px] 4k:pb-[50px]">
-            <div class>
-              <h2
-                class="page__title">Обо
-                мне</h2>
-              <h3
-                class="page__subtitle">Меня
-                зовут Александр</h3>
-            </div>
-            <a href="https://t.me/martiokhoras" target="_blank"
-              class="block btn">Подробнее →</a>
-          </div>
-        </div>
-      </section>
-
-      <section class="pt-[40px] hd:pt-[50px] 4k:pt-[60px]" id="main__contacts">
-        <div class="cont">
-          <div
-            class="flex gap-[20px] flex-col lg:flex-row justify-between lg:items-start items-center">
-            <img class="max-h-[600px]"
-              src="https://ik.imagekit.io/Excelsio/new-excelsio-moments/i_mob.webp?updatedAt=1749394859046"
-              alt="i">
-
-            <div
-              class="border border-dark-12 rounded-[20px] relative overflow-hidden">
-              <div
-                class="4k:p-[40px] hd:p-[30px] p-[24px]">
-                <div class="flex gap-[10px]"><img src="/src/icon/star_min.svg"
-                    alt="star"><h4
-                    class="font-medium text-[20px] text-grey-80 hd:text-[24px] 4k:text-[30px]">Моё
-                    дело</h4></div>
-                <p
-                  class="font-normal text-[14px] text-grey-70 md:text-[16px] 4k:text-[18px] mt-[12px] hd:mt-[16px] 4k:mt-[20px]">Моё
-                  увлечение фотографией и веб-разработкой — это про внимание.
-                  Про умение замечать красоту в простом и передавать атмосферу
-                  через визуал.
-
-                  Я снимаю на телефон — в моменте, по наитию. Так же создаю и
-                  сайты: вручную, с теплом, с упором на эстетику и структуру.
-
-                  Этот сайт — больше, чем портфолио. Это мой визуальный дневник.
-                  Здесь — кадры, веб-проекты, мысли. Всё, что говорит за меня
-                  без слов.&nbsp;<span
-                    class="font-bold text-purple-90 whitespace-nowrap">
-                    Добро
-                    пожаловать.</span></p>
-              </div>
-              <div class="4k:p-[40px] hd:p-[30px] p-[24px]">
-                <div class="flex gap-[10px]"><img src="/src/icon/star_min.svg"
-                    alt="star"><h4
-                    class="font-medium text-[20px] text-grey-80 hd:text-[24px] 4k:text-[30px]">Можешь
-                    просто написать</h4></div>
-                <div
-                  class="flex hd:gap-[120px] hd:flex-row flex-col gap-[12px] mt-[20px] md:mt-[30px] 4k:mt-[40px]">
-                  <div class>
-                    <div
-                      class="text-[14px] text-grey-90 font-medium md:text-[16px] 4k:text-[18px]">Telegram</div>
-                    <a
-                      class="font-normal 4k:text-[20px] text-grey-70 md:text-[18px] text-[16px] 4k:mt-[10px] md:mt-[6px] mt-[2px]"
-                      href="https://t.me/ExceIsio">@ExceIsio</a>
-                  </div>
-                  <div class>
-                    <div
-                      class="text-[14px] text-grey-90 font-medium md:text-[16px] 4k:text-[18px]">Номер</div>
-                    <a
-                      class="font-normal 4k:text-[20px] text-grey-70 md:text-[18px] text-[16px] 4k:mt-[10px] md:mt-[6px] mt-[2px]"
-                      href="tel:+79966064607">+7 (996) 606-46-07</a>
-                  </div>
-                </div>
-                <a class="block btn !mt-[30px] text-center"
-                  href="https://t.me/martiokhoras">Канал</a>
-              </div>
-
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="overflow-hidden section" id="work">
-        <div class="cont">
-          <!-- Заголовок и кнопки -->
-          <div class="flex items-end justify-between bar">
-            <div>
-              <h2 class="page__title">Работы</h2>
-              <h3 class="page__subtitle">Web Projects</h3>
-            </div>
-            <div class="relative flex gap-4 arrow__wrap">
-              <button class="arrow arrow-prev pb-[2.5px] pr-[2.5px]"
-                aria-label="Предыдущий слайд">‹</button>
-              <button class="arrow arrow-next pb-[2.5px] pl-[2.5px]"
-                aria-label="Следующий слайд">›</button>
-            </div>
-          </div>
-
-          <!-- Слайдер -->
-          <div class="relative lg:mt-[20px] 4k:[30px]">
-            <div class="swiper project__swiper !overflow-hidden">
-              <div class="swiper-wrapper">
-                <!-- Слайд 1 — TATWOOD (оставил твой вариант) -->
-                <div class="px-2 swiper-slide">
-                  <div href="https://tat-wood.ru/" target="_blank"
-                    class="flex flex-col lg:flex-row items-center w-full rounded-[20px] overflow-hidden bg-absolute-black pt-[40px] hd:pt-[60px] 4k:pt-[80px] gap-[50px]">
-                    <div
-                      class="flex flex-col justify-between order-2 leading-normal text-grey-70 lg:w-1/2 lg:order-1 h-[100%]">
-                      <h5 class="text-2xl font-bold text-absolute-white">
-                        TATWOOD — столярная мастерская
-                      </h5>
-                      <div
-                        class="read-more-wrapper mt-[30px] xl:mt-[40px] 4k:mt-[50px]">
-                        <h6 class="flex items-center gap-2 decor__list">
-                          <img class="w-[20px] h-[20px]"
-                            src="/src/icon/star.svg" alt="star" />
-                          Описание:
-                        </h6>
-                        <p class="pl-[30px] text">
-                          Многостраничный сайт с тёплой атмосферой дерева и
-                          минималистичной подачей.
-                          Всё построено так, чтобы подчеркнуть индивидуальность
-                          клиента и сделать навигацию максимально понятной
-                          <span class="dots">...</span>
-                        </p>
-                        <div class="hidden md:block read-more-text">
-                          <h6 class="flex items-center gap-2 mt-3 decor__list">
-                            <img class="w-[20px] h-[20px]"
-                              src="/src/icon/star.svg" alt="star" />
-                            Технологии:
-                          </h6>
-                          <p class="pl-[30px] text">
-                            HTML, SCSS, JavaScript, UIkit, Swiper, Lightbox,
-                            PHP, Telegram API, кастомная админка.
-                          </p>
-                          <h6
-                            class="flex items-center gap-2 mt-3 decor__list not-visited">
-                            <img class="w-[20px] h-[20px]"
-                              src="/src/icon/star.svg" alt="star" />
-                            Что внутри:
-                          </h6>
-                          <p class="pl-[20px] text">
-                            • Адаптивный дизайн под все устройства<br>
-                            • Слайдеры с отзывами и галереей работ<br>
-                            • Удобная админка без сторонних CMS<br>
-                            • SEO-структура: метатеги, микроразметка,
-                            sitemap<br>
-                            • Интеграция формы с Telegram-ботом напрямую
-                          </p>
-                          <p class="mt-5 text-sm italic text-grey-50 pl-[10px]">
-                            Коммерческий проект, выполненный самостоятельно без
-                            шаблонов и CMS. Реализована полная архитектура под
-                            задачи клиента.
-                          </p>
-                        </div>
-                        <button
-                          class="pl-[10px] mt-4 underline read-more-toggle text-purple-80 md:hidden">
-                          Читать больше
-                        </button>
-                      </div>
-                    </div>
-                    <a class="web__link" target="_blank"
-                      href="https://tat-wood.ru/"><img
-                        class="web__img"
-                        src="https://ik.imagekit.io/Excelsio/new-excelsio-moments/tatwood.png?updatedAt=1749394867732"
-                        alt="TATWOOD"></a>
-
-                  </div>
-                </div>
-
-                <!-- Слайд 2 — Sweaterlyana -->
-                <div class="px-2 swiper-slide">
-                  <div
-                    class="flex flex-col lg:flex-row items-center w-full rounded-[20px] overflow-hidden bg-absolute-black pt-[40px] hd:pt-[60px] 4k:pt-[80px] gap-[50px]">
-                    <div
-                      class="flex flex-col justify-between order-2 leading-normal text-grey-70 lg:w-1/2 lg:order-1 h-[100%]">
-                      <h5 class="text-2xl font-bold text-absolute-white">
-                        Sweaterlyana — магазин уютных свитеров
-                      </h5>
-                      <div
-                        class="read-more-wrapper mt-[30px] xl:mt-[40px] 4k:mt-[50px]">
-                        <h6 class="flex items-center gap-2 decor__list">
-                          <img class="w-[20px] h-[20px]"
-                            src="/src/icon/star.svg" alt="star" />
-                          Описание:
-                        </h6>
-                        <p class="pl-[30px] text">
-                          Лендинг для интернет-магазина тёплой и уютной одежды
-                          ручной работы. Визуально оформлен с душой, чтобы
-                          передавать атмосферу домашнего тепла и заботы.
-                          <span class="dots">...</span>
-                        </p>
-                        <div class="hidden md:block read-more-text">
-                          <h6 class="flex items-center gap-2 mt-3 decor__list">
-                            <img class="w-[20px] h-[20px]"
-                              src="/src/icon/star.svg" alt="star" />
-                            Технологии:
-                          </h6>
-                          <p class="pl-[30px] text">
-                            HTML, Sass, jQuery, кастомная jQuery-карусель, PHP
-                            (Mailer), отправка заявок на почту.
-                          </p>
-                          <h6
-                            class="flex items-center gap-2 mt-3 decor__list not-visited">
-                            <img class="w-[20px] h-[20px]"
-                              src="/src/icon/star.svg" alt="star" />
-                            Что внутри:
-                          </h6>
-                          <p class="pl-[20px] text">
-                            • Уютный адаптивный дизайн<br>
-                            • Карусель с изделиями на jQuery<br>
-                            • Форма с валидацией и отправкой писем<br>
-                            • Минимум зависимостей, максимум
-                            индивидуальности<br>
-                            • Всё сверстано вручную без фреймворков
-                          </p>
-                          <p class="mt-5 text-sm italic text-grey-50 pl-[10px]">
-                            Pet-проект для портфолио. Сайт разработан вручную
-                            без
-                            шаблонов и UI-библиотек.
-                          </p>
-                        </div>
-                        <button
-                          class="pl-[10px] mt-4 underline read-more-toggle text-purple-80 md:hidden">
-                          Читать больше
-                        </button>
-                      </div>
-                    </div>
-
-                    <a class="web__link" target="_blank"
-                      href="https://sweaterlyana.excelsio-moments.ru/">
-                      <img class="web__img"
-                        src="https://ik.imagekit.io/Excelsio/new-excelsio-moments/SweaterLyana.png?updatedAt=1749394868229"
-                        alt="Sweaterlyana"></a>
-                  </div>
-                </div>
-
-                <!-- Слайд 3 — Excelsio Moments -->
-                <div class="px-2 swiper-slide">
-                  <div
-                    class="flex flex-col lg:flex-row items-center w-full rounded-[20px] overflow-hidden bg-absolute-black pt-[40px] hd:pt-[60px] 4k:pt-[80px] gap-[50px]">
-                    <div
-                      class="flex flex-col justify-between order-2 leading-normal text-grey-70 lg:w-1/2 lg:order-1 h-[100%]">
-                      <h5 class="text-2xl font-bold text-absolute-white">
-                        Excelsio Moments — фотогалерея
-                      </h5>
-                      <div
-                        class="read-more-wrapper mt-[30px] xl:mt-[40px] 4k:mt-[50px]">
-                        <h6 class="flex items-center gap-2 decor__list">
-                          <img class="w-[20px] h-[20px]"
-                            src="/src/icon/star.svg" alt="star" />
-                          Описание:
-                        </h6>
-                        <p class="pl-[30px] text">
-                          Минималистичный сайт-витрина для демонстрации
-                          фоторабот.
-                          Создан для быстрой загрузки, удобного просмотра и
-                          перехода в Telegram-канал с полным архивом съёмок.
-                          <span class="dots">...</span>
-                        </p>
-                        <div class="hidden md:block read-more-text">
-                          <h6 class="flex items-center gap-2 mt-3 decor__list">
-                            <img class="w-[20px] h-[20px]"
-                              src="/src/icon/star.svg" alt="star" />
-                            Технологии:
-                          </h6>
-                          <p class="pl-[30px] text">
-                            HTML, CSS
-                          </p>
-                          <h6
-                            class="flex items-center gap-2 mt-3 decor__list not-visited">
-                            <img class="w-[20px] h-[20px]"
-                              src="/src/icon/star.svg" alt="star" />
-                            Что внутри:
-                          </h6>
-                          <p class="pl-[20px] text">
-                            • Лёгкая адаптивная вёрстка<br>
-                            • Фокус на фотографиях без визуального шума<br>
-                            • Ультраминималистичный интерфейс<br>
-                            • Быстрая загрузка за счёт отсутствия
-                            фреймворков<br>
-                            • Интеграция с Telegram-каналом
-                          </p>
-                          <p class="mt-5 text-sm italic text-grey-50 pl-[10px]">
-                            Личный проект. Сделан для себя, с вниманием к
-                            эстетике и
-                            удобству.
-                          </p>
-                        </div>
-                        <button
-                          class="pl-[10px] mt-4 underline read-more-toggle text-purple-80 md:hidden">
-                          Читать больше
-                        </button>
-                      </div>
-                    </div>
-                    <a class="web__link" target="_blank"
-                      href="https://excelsio-moments.excelsio-moments.ru/">
-                      <img class="web__img"
-                        src="https://ik.imagekit.io/Excelsio/new-excelsio-moments/excelsio-moments.png?updatedAt=1749394859316"
-                        alt="Excelsio Moments"></a>
-                  </div>
-                </div>
-
-                <!-- Слайд 4 — Pet-проекты -->
-                <div class="px-2 swiper-slide">
-                  <div
-                    class="flex flex-col lg:flex-row items-center w-full rounded-[20px] overflow-hidden bg-absolute-black pt-[40px] hd:pt-[60px] 4k:pt-[80px] gap-[50px]">
-                    <div
-                      class="flex flex-col justify-between order-2 leading-normal text-grey-70 lg:w-1/2 lg:order-1 h-[100%]">
-                      <h5 class="text-2xl font-bold text-absolute-white">
-                        ...и ещё множество pet-проектов
-                      </h5>
-                      <div
-                        class="read-more-wrapper mt-[30px] xl:mt-[40px] 4k:mt-[50px]">
-                        <h6 class="flex items-center gap-2 decor__list">
-                          <img class="w-[20px] h-[20px]"
-                            src="/src/icon/star.svg" alt="star" />
-                          Описание:
-                        </h6>
-                        <p class="pl-[30px] text">
-                          Каждый из них — это не просто тренировка навыков, а
-                          способ выразить стиль, атмосферу и внимание к деталям.
-                          Я
-                          делаю сайты, в которые вкладываю душу — от идеи до
-                          адаптива.
-                          <span class="dots">...</span>
-                        </p>
-                        <div class="hidden md:block read-more-text">
-                          <h6
-                            class="flex items-center gap-2 mt-3 decor__list not-visited">
-                            <img class="w-[20px] h-[20px]"
-                              src="/src/icon/star.svg" alt="star" />
-                            Что внутри:
-                          </h6>
-                          <p class="pl-[20px] text">
-                            • Лэндинги, галереи, промо-страницы, эксперименты с
-                            анимацией<br>
-                            • Прокачка визуального языка<br>
-                            • Собственный дизайн и адаптив<br>
-                            • Отработка новых технологий<br>
-                            • Всё сделано самостоятельно без шаблонов
-                          </p>
-                          <p class="mt-5 text-sm italic text-grey-50 pl-[10px]">
-                            Лэндинги, галереи, промо-страницы, эксперименты с
-                            анимацией, прокачка визуального языка — всё это
-                            часть
-                            моего пути как разработчика и творца.
-                          </p>
-                        </div>
-                        <button
-                          class="pl-[10px] mt-4 underline read-more-toggle text-purple-80 md:hidden">
-                          Читать больше
-                        </button>
-                      </div>
-                    </div>
-                    <a class="web__link" target="_blank"
-                      href="https://github.com/Excelsi0">
-                      <img class="web__img"
-                        src="https://ik.imagekit.io/Excelsio/new-excelsio-moments/pet-cover.jpg?updatedAt=1749394858446"
-                        alt="pet projects preview"></a>
-                  </div>
-                </div>
+            <!-- drawer component -->
+            <div id="drawer-disable-body-scrolling"
+              class="fixed top-0 left-0 z-40 w-full h-full p-4 transition-transform -translate-x-full ovemask-r-from-yellow-300-y-auto sm:px-10 bg-dark-06 xl:hidden"
+              tabindex="-1"
+              aria-labelledby="drawer-disable-body-scrolling-label">
+              <h5 id="drawer-disable-body-scrolling-label"
+                class="text-base font-semibold text-gray-500 uppercase dark:text-gray-400">Меню</h5>
+              <button type="button"
+                data-drawer-hide="drawer-disable-body-scrolling"
+                aria-controls="drawer-disable-body-scrolling"
+                class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 absolute top-2.5 end-2.5 inline-flex items-center justify-center dark:hover:bg-gray-600 dark:hover:text-white">
+                <svg class="w-3 h-3" aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg" fill="none"
+                  viewBox="0 0 14 14">
+                  <path stroke="currentColor" stroke-linecap="round"
+                    stroke-linejoin="round" stroke-width="2"
+                    d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6" />
+                </svg>
+                <span class="sr-only">Close menu</span>
+              </button>
+              <div class="py-10 overflow-y-auto">
+                <ul class="mt-5 space-y-10 font-medium">
+                  <li><a class="menu__link" href="main">Главная</a></li>
+                  <li><a class="menu__link" href="#main__contacts">Обо
+                      мне</a></li>
+                  <li><a class="menu__link" href="#work">Работы</a></li>
+                  <li><a class="menu__link"
+                      href="#faq">Faq</a></li>
+                </ul>
               </div>
             </div>
 
           </div>
         </section>
-
-        <section class="overflow-hidden section">
-          <div class="cont">
-            <!-- Заголовок и кнопки -->
-            <div class="flex items-end justify-between bar">
-              <div>
-                <h2 class="page__title">Фото</h2>
-                <h3 class="page__subtitle">Мир через мой объектив</h3>
-              </div>
-              <div class="relative flex gap-4 arrow__wrap">
-                <button class="arrow arrow-prev_gallery pb-[2.5px] pr-[2.5px]"
-                  aria-label="Предыдущий слайд">‹</button>
-                <button class="arrow arrow-next_gallery pb-[2.5px] pl-[2.5px]"
-                  aria-label="Следующий слайд">›</button>
-              </div>
-            </div>
-
-            <!-- Слайдер -->
-            <div class="relative mt-[10px] lg:mt-[20px] 4k:mt-[30px]">
-              <div class="swiper gallery__swiper !overflow-hidden">
-                <div class="swiper-wrapper">
-                  <div class="px-2 swiper-slide">
-                    <a
-                      href="https://ik.imagekit.io/Excelsio/new-excelsio-moments/photo24.jpeg?updatedAt=1749394866325"
-                      data-fancybox="gallery"
-                      data-caption="Моя работа">
-                      <img class="gallery__img"
-                        src="https://ik.imagekit.io/Excelsio/new-excelsio-moments/photo24.jpeg?updatedAt=1749394866325"
-                        alt>
-                    </a>
-                  </div>
-                  <div class="px-2 swiper-slide">
-                    <a
-                      href="https://ik.imagekit.io/Excelsio/new-excelsio-moments/photo25.jpeg?updatedAt=1749394866111"
-                      data-fancybox="gallery"
-                      data-caption="Моя работа">
-                      <img class="gallery__img"
-                        src="https://ik.imagekit.io/Excelsio/new-excelsio-moments/photo25.jpeg?updatedAt=1749394866111"
-                        alt>
-                    </a>
-                  </div>
-                  <div class="px-2 swiper-slide">
-                    <a
-                      href="https://ik.imagekit.io/Excelsio/new-excelsio-moments/photo26.jpeg?updatedAt=1749394866473"
-                      data-fancybox="gallery"
-                      data-caption="Моя работа">
-                      <img class="gallery__img"
-                        src="https://ik.imagekit.io/Excelsio/new-excelsio-moments/photo26.jpeg?updatedAt=1749394866473"
-                        alt>
-                    </a>
-                  </div>
-                  <div class="px-2 swiper-slide">
-                    <a
-                      href="https://ik.imagekit.io/Excelsio/new-excelsio-moments/photo21.jpeg?updatedAt=1749394865330"
-                      data-fancybox="gallery"
-                      data-caption="Моя работа">
-                      <img class="gallery__img"
-                        src="https://ik.imagekit.io/Excelsio/new-excelsio-moments/photo21.jpeg?updatedAt=1749394865330"
-                        alt>
-                    </a>
-                  </div>
-                  <div class="px-2 swiper-slide">
-                    <a
-                      href="https://ik.imagekit.io/Excelsio/new-excelsio-moments/photo22.jpeg?updatedAt=1749394865588"
-                      data-fancybox="gallery"
-                      data-caption="Моя работа">
-                      <img class="gallery__img"
-                        src="https://ik.imagekit.io/Excelsio/new-excelsio-moments/photo22.jpeg?updatedAt=1749394865588"
-                        alt>
-                    </a>
-                  </div>
-                  <div class="px-2 swiper-slide">
-                    <a
-                      href="https://ik.imagekit.io/Excelsio/new-excelsio-moments/photo23.jpeg?updatedAt=1749394865251"
-                      data-fancybox="gallery"
-                      data-caption="Моя работа">
-                      <img class="gallery__img"
-                        src="https://ik.imagekit.io/Excelsio/new-excelsio-moments/photo23.jpeg?updatedAt=1749394865251"
-                        alt>
-                    </a>
-                  </div>
-                  <div class="px-2 swiper-slide">
-                    <a
-                      href="https://ik.imagekit.io/Excelsio/new-excelsio-moments/photo1.jpg?updatedAt=1749394858871"
-                      data-fancybox="gallery"
-                      data-caption="Моя работа">
-                      <img class="gallery__img"
-                        src="https://ik.imagekit.io/Excelsio/new-excelsio-moments/photo1.jpg?updatedAt=1749394858871"
-                        alt>
-                    </a>
-                  </div>
-                  <div class="px-2 swiper-slide">
-                    <a
-                      href="https://ik.imagekit.io/Excelsio/new-excelsio-moments/photo2.jpg?updatedAt=1749394858417"
-                      data-fancybox="gallery"
-                      data-caption="Моя работа">
-                      <img class="gallery__img"
-                        src="https://ik.imagekit.io/Excelsio/new-excelsio-moments/photo2.jpg?updatedAt=1749394858417"
-                        alt>
-                    </a>
-                  </div>
-                  <div class="px-2 swiper-slide">
-                    <a
-                      href="https://ik.imagekit.io/Excelsio/new-excelsio-moments/photo3.jpg?updatedAt=1749394858820"
-                      data-fancybox="gallery"
-                      data-caption="Моя работа">
-                      <img class="gallery__img"
-                        src="https://ik.imagekit.io/Excelsio/new-excelsio-moments/photo3.jpg?updatedAt=1749394858820"
-                        alt>
-                    </a>
-                  </div>
-                  <div class="px-2 swiper-slide">
-                    <a
-                      href="https://ik.imagekit.io/Excelsio/new-excelsio-moments/photo14.jpeg?updatedAt=1749394862291"
-                      data-fancybox="gallery"
-                      data-caption="Моя работа">
-                      <img class="gallery__img"
-                        src="https://ik.imagekit.io/Excelsio/new-excelsio-moments/photo14.jpeg?updatedAt=1749394862291"
-                        alt>
-                    </a>
-                  </div>
-                  <div class="px-2 swiper-slide">
-                    <a
-                      href="https://ik.imagekit.io/Excelsio/new-excelsio-moments/photo5.jpg?updatedAt=1749394863251"
-                      data-fancybox="gallery"
-                      data-caption="Моя работа">
-                      <img class="gallery__img"
-                        src="https://ik.imagekit.io/Excelsio/new-excelsio-moments/photo5.jpg?updatedAt=1749394863251"
-                        alt>
-                    </a>
-                  </div>
-                  <div class="px-2 swiper-slide">
-                    <a
-                      href="https://ik.imagekit.io/Excelsio/new-excelsio-moments/photo6.jpg?updatedAt=1749394863881"
-                      data-fancybox="gallery"
-                      data-caption="Моя работа">
-                      <img class="gallery__img"
-                        src="https://ik.imagekit.io/Excelsio/new-excelsio-moments/photo6.jpg?updatedAt=1749394863881"
-                        alt>
-                    </a>
-                  </div>
-                  <div class="px-2 swiper-slide">
-                    <a
-                      href="https://ik.imagekit.io/Excelsio/new-excelsio-moments/photo7.jpg?updatedAt=1749394862169"
-                      data-fancybox="gallery"
-                      data-caption="Моя работа">
-                      <img class="gallery__img"
-                        src="https://ik.imagekit.io/Excelsio/new-excelsio-moments/photo7.jpg?updatedAt=1749394862169"
-                        alt>
-                    </a>
-                  </div>
-                  <div class="px-2 swiper-slide">
-                    <a
-                      href="https://ik.imagekit.io/Excelsio/new-excelsio-moments/photo8.jpg?updatedAt=1749394862234"
-                      data-fancybox="gallery"
-                      data-caption="Моя работа">
-                      <img class="gallery__img"
-                        src="https://ik.imagekit.io/Excelsio/new-excelsio-moments/photo8.jpg?updatedAt=1749394862234"
-                        alt>
-                    </a>
-                  </div>
-                  <div class="px-2 swiper-slide">
-                    <a
-                      href="https://ik.imagekit.io/Excelsio/new-excelsio-moments/photo9.jpeg?updatedAt=1749394862423"
-                      data-fancybox="gallery"
-                      data-caption="Моя работа">
-                      <img class="gallery__img"
-                        src="https://ik.imagekit.io/Excelsio/new-excelsio-moments/photo9.jpeg?updatedAt=1749394862423"
-                        alt>
-                    </a>
-                  </div>
-                  <div class="px-2 swiper-slide">
-                    <a
-                      href="https://ik.imagekit.io/Excelsio/new-excelsio-moments/photo10.jpeg?updatedAt=1749394862197"
-                      data-fancybox="gallery"
-                      data-caption="Моя работа">
-                      <img class="gallery__img"
-                        src="https://ik.imagekit.io/Excelsio/new-excelsio-moments/photo10.jpeg?updatedAt=1749394862197"
-                        alt>
-                    </a>
-                  </div>
-                  <div class="px-2 swiper-slide">
-                    <a
-                      href="https://ik.imagekit.io/Excelsio/new-excelsio-moments/photo11.jpeg?updatedAt=1749394862366"
-                      data-fancybox="gallery"
-                      data-caption="Моя работа">
-                      <img class="gallery__img"
-                        src="https://ik.imagekit.io/Excelsio/new-excelsio-moments/photo11.jpeg?updatedAt=1749394862366g"
-                        alt>
-                    </a>
-                  </div>
-                  <div class="px-2 swiper-slide">
-                    <a
-                      href="https://ik.imagekit.io/Excelsio/new-excelsio-moments/photo12.jpeg?updatedAt=1749394862382"
-                      data-fancybox="gallery"
-                      data-caption="Моя работа">
-                      <img class="gallery__img"
-                        src="https://ik.imagekit.io/Excelsio/new-excelsio-moments/photo12.jpeg?updatedAt=1749394862382"
-                        alt>
-                    </a>
-                  </div>
-                  <div class="px-2 swiper-slide">
-                    <a
-                      href="https://ik.imagekit.io/Excelsio/new-excelsio-moments/photo13.jpeg?updatedAt=1749394862371"
-                      data-fancybox="gallery"
-                      data-caption="Моя работа">
-                      <img class="gallery__img"
-                        src="https://ik.imagekit.io/Excelsio/new-excelsio-moments/photo13.jpeg?updatedAt=1749394862371"
-                        alt>
-                    </a>
-                  </div>
-                  <div class="px-2 swiper-slide">
-                    <a
-                      href="https://ik.imagekit.io/Excelsio/new-excelsio-moments/photo4.jpg?updatedAt=1749394858592"
-                      data-fancybox="gallery"
-                      data-caption="Моя работа">
-                      <img class="gallery__img"
-                        src="https://ik.imagekit.io/Excelsio/new-excelsio-moments/photo4.jpg?updatedAt=1749394858592"
-                        alt>
-                    </a>
-                  </div>
-                  <div class="px-2 swiper-slide">
-                    <a
-                      href="https://ik.imagekit.io/Excelsio/new-excelsio-moments/photo15.jpeg?updatedAt=1749394864288"
-                      data-fancybox="gallery"
-                      data-caption="Моя работа">
-                      <img class="gallery__img"
-                        src="https://ik.imagekit.io/Excelsio/new-excelsio-moments/photo15.jpeg?updatedAt=1749394864288"
-                        alt>
-                    </a>
-                  </div>
-                  <div class="px-2 swiper-slide">
-                    <a
-                      href="https://ik.imagekit.io/Excelsio/new-excelsio-moments/photo16.jpeg?updatedAt=1749394864238"
-                      data-fancybox="gallery"
-                      data-caption="Моя работа">
-                      <img class="gallery__img"
-                        src="https://ik.imagekit.io/Excelsio/new-excelsio-moments/photo16.jpeg?updatedAt=1749394864238"
-                        alt>
-                    </a>
-                  </div>
-                  <div class="px-2 swiper-slide">
-                    <a
-                      href="https://ik.imagekit.io/Excelsio/new-excelsio-moments/photo17.jpeg?updatedAt=1749394864359"
-                      data-fancybox="gallery"
-                      data-caption="Моя работа">
-                      <img class="gallery__img"
-                        src="https://ik.imagekit.io/Excelsio/new-excelsio-moments/photo17.jpeg?updatedAt=1749394864359"
-                        alt>
-                    </a>
-                  </div>
-                  <div class="px-2 swiper-slide">
-                    <a
-                      href="https://ik.imagekit.io/Excelsio/new-excelsio-moments/photo18.jpeg?updatedAt=1749394865197"
-                      data-fancybox="gallery"
-                      data-caption="Моя работа">
-                      <img class="gallery__img"
-                        src="https://ik.imagekit.io/Excelsio/new-excelsio-moments/photo18.jpeg?updatedAt=1749394865197"
-                        alt>
-                    </a>
-                  </div>
-                  <div class="px-2 swiper-slide">
-                    <a
-                      href="https://ik.imagekit.io/Excelsio/new-excelsio-moments/photo19.jpeg?updatedAt=1749394865040"
-                      data-fancybox="gallery"
-                      data-caption="Моя работа">
-                      <img class="gallery__img"
-                        src="https://ik.imagekit.io/Excelsio/new-excelsio-moments/photo19.jpeg?updatedAt=1749394865040"
-                        alt>
-                    </a>
-                  </div>
-                  <div class="px-2 swiper-slide">
-                    <a
-                      href="https://ik.imagekit.io/Excelsio/new-excelsio-moments/photo20.jpeg?updatedAt=1749394864979"
-                      data-fancybox="gallery"
-                      data-caption="Моя работа">
-                      <img class="gallery__img"
-                        src="https://ik.imagekit.io/Excelsio/new-excelsio-moments/photo20.jpeg?updatedAt=1749394864979"
-                        alt>
-                    </a>
-                  </div>
-
-                </div>
-              </div>
-            </div>
-
-          </div>
-          <section class="section" id="faq">
-            <div class="cont">
-              <div class="flex items-end justify-between bar ">
-                <div>
-                  <h2 class="page__title">faq</h2>
-                  <h3 class="page__subtitle">Часто задаваемые вопросы</h3>
-                </div>
-              </div>
-
-              <details
-                class="accordion mt-[10px] lg:mt-[20px] 4k:mt-[30px]">
-                <summary
-                  class="accardion__title">Сколько
-                  стоит разработка сайта?</summary>
-                <p class="accordion__text">Цена зависит от объёма и
-                  сложности
-                  проекта. Простой лендинг — <span class="whitespace-nowrap">от
-                    15 000 ₽</span>, многостраничный сайт —
-                  <span class="whitespace-nowrap">от 25 000 ₽.</span></p>
-              </details>
-
-              <details class="accordion">
-                <summary
-                  class="accardion__title">Сколько
-                  времени занимает создание сайта?</summary>
-                <p class="accordion__text">Обычно от 5 до 30 рабочих дней в
-                  зависимости от объема и наличия готового контента/макета.</p>
-              </details>
-
-              <details class="accordion">
-                <summary
-                  class="accardion__title">Можно
-                  ли
-                  вносить изменения после запуска?</summary>
-                <p class="accordion__text">Да, любые правки возможны.
-                  Небольшие
-                  изменения после запуска — бесплатно в течение 7 дней.</p>
-              </details>
-
-              <details class="accordion">
-                <summary
-                  class="accardion__title">Можете
-                  загрузить сайт на хостинг?</summary>
-                <p class="accordion__text">Да. Помогу с загрузкой,
-                  подключением домена и базовой настройкой. Также подскажу, где
-                  лучше зарегистрировать хостинг и домен.
-                </p></p>
-            </details>
-
-            <details class="accordion">
-              <summary
-                class="accardion__title">Вы
-                работаете
-                по предоплате?</summary>
-              <p class="accordion__text">Да. Обычно 50% предоплаты,
-                остальное
-                — после завершения проекта и одобрения.</p>
-            </details>
-
-          </div>
-        </section>
-
         <section>
-          <div
-            class="relative cont h-[100px] md:h-[200px] flex items-center justify-end">
-            <h6
-              class="font-black md:text-[80px] text-[60px] lg:text-[150px] 4k:text-[200px] uppercase text-[#232329]">EXCELSIO</h6>
-
+          <div class="cont">
+            <div
+              class="flex flex-col justify-between xl:flex-row mt-[40px] xl:mt-0">
+              <div
+                class="xl:pt-[90px] xl:px-[40px]"><h1
+                  class="font-medium uppercase text-[22px] text-grey-40 text-center hd:text-left">Мой
+                  взгляд на красоту вокруг</h1>
+                <h2
+                  class="font-semibold uppercase text-[40px] md:text-[80px] text-grey-90 text-center hd:text-left">Excelsio</h2>
+              </div>
+              <svg class="hidden xl:block" width="346" height="328"
+                viewBox="0 0 346 328" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <mask id="mask0_83_2154" style="mask-type:luminance"
+                  maskUnits="userSpaceOnUse" x="0" y="-9" width="346"
+                  height="346">
+                  <path d="M346 -9H0V337H346V-9Z" fill="white" />
+                </mask>
+                <g mask="url(#mask0_83_2154)">
+                  <path
+                    d="M173 164.5C268.102 164.5 345.227 241.462 345.497 336.5H325.737C325.468 252.374 257.189 184.26 173 184.26C88.8107 184.26 20.5323 252.374 20.2627 336.5H0.50293C0.772607 241.462 77.8976 164.5 173 164.5ZM173 206.02C245.172 206.02 303.708 264.391 303.978 336.5H284.217C283.947 275.305 234.258 225.78 173 225.78C111.742 225.78 62.0526 275.305 61.7832 336.5H42.0225C42.292 264.391 100.829 206.02 173 206.02ZM173 247.54C222.241 247.54 262.188 287.322 262.457 336.5H242.697C242.428 298.237 211.327 267.3 173 267.3C134.673 267.3 103.572 298.237 103.303 336.5H83.543C83.8121 287.322 123.759 247.54 173 247.54ZM20.2627 -8.5C20.5323 75.6261 88.8107 143.74 173 143.74C257.189 143.74 325.468 75.6261 325.737 -8.5H345.497C345.23 85.7955 269.304 162.295 175.229 163.486L173 163.5L170.771 163.486C76.6951 162.295 0.770483 85.7955 0.50293 -8.5H20.2627ZM61.7832 -8.5C62.0526 52.6951 111.742 102.22 173 102.22C234.258 102.22 283.947 52.6951 284.217 -8.5H303.978C303.708 63.6082 245.172 121.98 173 121.98C100.829 121.98 42.2919 63.6082 42.0225 -8.5H61.7832ZM103.303 -8.5C103.572 29.7641 134.673 60.7002 173 60.7002C211.327 60.7002 242.428 29.7641 242.697 -8.5H262.457C262.188 40.6773 222.241 80.46 173 80.46C123.759 80.46 83.8121 40.6773 83.543 -8.5H103.303Z"
+                    fill="#0E0E10" stroke="#1C1C21" />
+                </g>
+              </svg>
+              <div class="xl:pt-[80px]">
+                <div
+                  class="flex gap-[10px] mt-5 justify-center hd:justify-start">
+                  <div
+                    class="font-semibold text-[58px] text-absolute-white uppercase">Go</div>
+                  <a href="https://t.me/ExceIsio" target="_blank"
+                    class="w-[130px] h-[66px] rounded-full flex items-center justify-center bg-purple-55 text-absolute-white"><span
+                      class="transform rotate-45">↑</span></a>
+                </div>
+                <div
+                  class="font-semibold text-[40px] text-absolute-white uppercase text-center hd:text-left">Работать
+                  вместе</div>
+              </div>
+            </div>
           </div>
         </section>
-
         <section class>
           <div
-            class="mt-0 overflow-hidden marquee-container whitespace-nowrap bg-dark-08 text-purple-90">
+            class="mt-10 overflow-hidden marquee-container whitespace-nowrap bg-dark-08 text-purple-90 hd:mt-0">
             <div class="inline-flex marquee-track animate-marquee">
               <ul class="flex py-4 uppercase list-none bg-dark-06 gap-[40px]">
                 <li class="decor__list"><img src="src/icon/star.svg" alt="star">
@@ -1011,6 +197,898 @@
             </div>
           </div>
         </section>
+        <section>
+          <div class="cont">
+            <picture>
+              <source
+                srcset="https://ik.imagekit.io/Excelsio/new-excelsio-moments/bg_mobile.webp?updatedAt=1749394858875"
+                media="(max-width: 767px)">
+              <img
+                src="https://ik.imagekit.io/Excelsio/new-excelsio-moments/bg.webp?updatedAt=1749394859655"
+                data-lag=".1"
+                alt="bg" class="w-full h-auto will mn-bg">
+            </picture>
+          </div>
+        </section>
+
+        <section
+          class="section">
+          <div class="cont">
+            <div
+              class="flex hd:flex-row flex-col flex-wrap items-center justify-between gap-[20px] border-b-[1px] border-dark-12 pb-[20px] hd:pb-[40px] 4k:pb-[50px]">
+              <div class>
+                <h2
+                  class="page__title">Обо
+                  мне</h2>
+                <h3
+                  class="page__subtitle">Меня
+                  зовут Александр</h3>
+              </div>
+              <a href="https://t.me/martiokhoras" target="_blank"
+                class="block btn">Подробнее →</a>
+            </div>
+          </div>
+        </section>
+
+        <section class="pt-[40px] hd:pt-[50px] 4k:pt-[60px]"
+          id="main__contacts">
+          <div class="cont">
+            <div
+              class="flex gap-[20px] flex-col lg:flex-row justify-between lg:items-start items-center mt-[100px]">
+              <img class="will max-h-[600px] gsap-lt" data-speed=".9"
+                src="https://ik.imagekit.io/Excelsio/new-excelsio-moments/im.jpg?updatedAt=1749465528125"
+                alt="i">
+
+              <div data-speed=".85"
+                class="will gsap-rt border border-dark-12 rounded-[20px] relative overflow-hidden bg-absolute-black">
+                <div
+                  class="4k:p-[40px] hd:p-[30px] p-[24px]">
+                  <div class="flex gap-[10px]"><img src="/src/icon/star_min.svg"
+                      alt="star"><h4
+                      class="font-medium text-[20px] text-grey-80 hd:text-[24px] 4k:text-[30px]">Моё
+                      дело</h4></div>
+                  <p
+                    class="font-normal text-[14px] text-grey-70 md:text-[16px] 4k:text-[18px] mt-[12px] hd:mt-[16px] 4k:mt-[20px]">Моё
+                    увлечение фотографией и веб-разработкой — это про внимание.
+                    Про умение замечать красоту в простом и передавать атмосферу
+                    через визуал.
+
+                    Я снимаю на телефон — в моменте, по наитию. Так же создаю и
+                    сайты: вручную, с теплом, с упором на эстетику и структуру.
+
+                    Этот сайт — больше, чем портфолио. Это мой визуальный
+                    дневник.
+                    Здесь — кадры, веб-проекты, мысли. Всё, что говорит за меня
+                    без слов.&nbsp;<span
+                      class="font-bold text-purple-90 whitespace-nowrap">
+                      Добро
+                      пожаловать.</span></p>
+                </div>
+                <div class="4k:p-[40px] hd:p-[30px] p-[24px]">
+                  <div class="flex gap-[10px]"><img src="/src/icon/star_min.svg"
+                      alt="star"><h4
+                      class="font-medium text-[20px] text-grey-80 hd:text-[24px] 4k:text-[30px]">Можешь
+                      просто написать</h4></div>
+                  <div
+                    class="flex hd:gap-[120px] hd:flex-row flex-col gap-[12px] mt-[20px] md:mt-[30px] 4k:mt-[40px]">
+                    <div class>
+                      <div
+                        class="text-[14px] text-grey-90 font-medium md:text-[16px] 4k:text-[18px]">Telegram</div>
+                      <a
+                        class="font-normal 4k:text-[20px] text-grey-70 md:text-[18px] text-[16px] 4k:mt-[10px] md:mt-[6px] mt-[2px]"
+                        href="https://t.me/ExceIsio">@ExceIsio</a>
+                    </div>
+                    <div class>
+                      <div
+                        class="text-[14px] text-grey-90 font-medium md:text-[16px] 4k:text-[18px]">Номер</div>
+                      <a
+                        class="font-normal 4k:text-[20px] text-grey-70 md:text-[18px] text-[16px] 4k:mt-[10px] md:mt-[6px] mt-[2px]"
+                        href="tel:+79966064607">+7 (996) 606-46-07</a>
+                    </div>
+                  </div>
+                  <a class="block btn !mt-[30px] text-center cursor-pointer"
+                    href="https://t.me/martiokhoras">Канал</a>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="overflow-hidden section mt-[100px]" id="work">
+          <div class="cont">
+            <!-- Заголовок и кнопки -->
+            <div class="flex items-end justify-between bar">
+              <div>
+                <h2 class="page__title">Работы</h2>
+                <h3 class="page__subtitle">Web Projects</h3>
+              </div>
+              <div class="relative flex gap-4 arrow__wrap">
+                <button class="arrow arrow-prev pb-[2.5px] pr-[2.5px]"
+                  aria-label="Предыдущий слайд">‹</button>
+                <button class="arrow arrow-next pb-[2.5px] pl-[2.5px]"
+                  aria-label="Следующий слайд">›</button>
+              </div>
+            </div>
+
+            <!-- Слайдер -->
+            <div class="relative lg:mt-[20px] 4k:[30px]">
+              <div class="swiper project__swiper !overflow-hidden">
+                <div class="swiper-wrapper">
+                  <!-- Слайд 1 — TATWOOD (оставил твой вариант) -->
+                  <div class="px-2 swiper-slide">
+                    <div
+                      class="flex flex-col lg:flex-row items-center w-full rounded-[20px] overflow-hidden bg-absolute-black pt-[40px] hd:pt-[60px] 4k:pt-[80px] gap-[50px]">
+                      <div
+                        class="z-100 flex flex-col justify-between order-2 leading-normal text-grey-70 lg:w-1/2 lg:order-1 h-[100%]">
+                        <h5 class="text-2xl font-bold text-absolute-white">
+                          TATWOOD — столярная мастерская
+                        </h5>
+                        <div
+                          class="read-more-wrapper mt-[30px] xl:mt-[40px] 4k:mt-[50px]">
+                          <h6 class="flex items-center gap-2 decor__list">
+                            <img class="w-[20px] h-[20px]"
+                              src="/src/icon/star.svg" alt="star" />
+                            Описание:
+                          </h6>
+                          <p class="pl-[30px] text">
+                            Многостраничный сайт с тёплой атмосферой дерева и
+                            минималистичной подачей.
+                            Всё построено так, чтобы подчеркнуть
+                            индивидуальность
+                            клиента и сделать навигацию максимально понятной
+                            <span class="dots">...</span>
+                          </p>
+                          <div class="hidden md:block read-more-text">
+                            <h6
+                              class="flex items-center gap-2 mt-3 decor__list">
+                              <img class="w-[20px] h-[20px]"
+                                src="/src/icon/star.svg" alt="star" />
+                              Технологии:
+                            </h6>
+                            <p class="pl-[30px] text">
+                              HTML, SCSS, JavaScript, UIkit, Swiper, Lightbox,
+                              PHP, Telegram API, кастомная админка.
+                            </p>
+                            <h6
+                              class="flex items-center gap-2 mt-3 decor__list not-visited">
+                              <img class="w-[20px] h-[20px]"
+                                src="/src/icon/star.svg" alt="star" />
+                              Что внутри:
+                            </h6>
+                            <p class="pl-[20px] text">
+                              • Адаптивный дизайн под все устройства<br>
+                              • Слайдеры с отзывами и галереей работ<br>
+                              • Удобная админка без сторонних CMS<br>
+                              • SEO-структура: метатеги, микроразметка,
+                              sitemap<br>
+                              • Интеграция формы с Telegram-ботом напрямую
+                            </p>
+                            <p
+                              class="mt-5 text-sm italic text-grey-50 pl-[10px]">
+                              Коммерческий проект, выполненный самостоятельно
+                              без
+                              шаблонов и CMS. Реализована полная архитектура под
+                              задачи клиента.
+                            </p>
+                          </div>
+                          <button
+                            class="pl-[10px] mt-4 underline read-more-toggle text-purple-80 md:hidden">
+                            Читать больше
+                          </button>
+                        </div>
+                      </div>
+                      <a class="web__link" target="_blank"
+                        href="https://tat-wood.ru/"><img
+                          class="web__img will gsap-rt" data-speed=".9"
+                          src="https://ik.imagekit.io/Excelsio/new-excelsio-moments/tatwood.png?updatedAt=1749394867732"
+                          alt="TATWOOD"></a>
+
+                    </div>
+                  </div>
+
+                  <!-- Слайд 2 — Sweaterlyana -->
+                  <div class="px-2 swiper-slide">
+                    <div
+                      class="flex flex-col lg:flex-row items-center w-full rounded-[20px] overflow-hidden bg-absolute-black pt-[40px] hd:pt-[60px] 4k:pt-[80px] gap-[50px]">
+                      <div
+                        class="z-100 flex flex-col justify-between order-2 leading-normal text-grey-70 lg:w-1/2 lg:order-1 h-[100%]">
+                        <h5 class="text-2xl font-bold text-absolute-white">
+                          Sweaterlyana — магазин уютных свитеров
+                        </h5>
+                        <div
+                          class="read-more-wrapper mt-[30px] xl:mt-[40px] 4k:mt-[50px]">
+                          <h6 class="flex items-center gap-2 decor__list">
+                            <img class="w-[20px] h-[20px]"
+                              src="/src/icon/star.svg" alt="star" />
+                            Описание:
+                          </h6>
+                          <p class="pl-[30px] text">
+                            Лендинг для интернет-магазина тёплой и уютной одежды
+                            ручной работы. Визуально оформлен с душой, чтобы
+                            передавать атмосферу домашнего тепла и заботы.
+                            <span class="dots">...</span>
+                          </p>
+                          <div class="hidden md:block read-more-text">
+                            <h6
+                              class="flex items-center gap-2 mt-3 decor__list">
+                              <img class="w-[20px] h-[20px]"
+                                src="/src/icon/star.svg" alt="star" />
+                              Технологии:
+                            </h6>
+                            <p class="pl-[30px] text">
+                              HTML, Sass, jQuery, кастомная jQuery-карусель, PHP
+                              (Mailer), отправка заявок на почту.
+                            </p>
+                            <h6
+                              class="flex items-center gap-2 mt-3 decor__list not-visited">
+                              <img class="w-[20px] h-[20px]"
+                                src="/src/icon/star.svg" alt="star" />
+                              Что внутри:
+                            </h6>
+                            <p class="pl-[20px] text">
+                              • Уютный адаптивный дизайн<br>
+                              • Карусель с изделиями на jQuery<br>
+                              • Форма с валидацией и отправкой писем<br>
+                              • Минимум зависимостей, максимум
+                              индивидуальности<br>
+                              • Всё сверстано вручную без фреймворков
+                            </p>
+                            <p
+                              class="mt-5 text-sm italic text-grey-50 pl-[10px]">
+                              Pet-проект для портфолио. Сайт разработан вручную
+                              без
+                              шаблонов и UI-библиотек.
+                            </p>
+                          </div>
+                          <button
+                            class="pl-[10px] mt-4 underline read-more-toggle text-purple-80 md:hidden">
+                            Читать больше
+                          </button>
+                        </div>
+                      </div>
+
+                      <a class="web__link" target="_blank"
+                        href="https://sweaterlyana.excelsio-moments.ru/">
+                        <img class="web__img will gsap-rt"
+                          data-speed=".9"
+                          src="https://ik.imagekit.io/Excelsio/new-excelsio-moments/SweaterLyana.png?updatedAt=1749394868229"
+                          alt="Sweaterlyana"></a>
+                    </div>
+                  </div>
+
+                  <!-- Слайд 3 — Excelsio Moments -->
+                  <div class="px-2 swiper-slide">
+                    <div
+                      class="flex flex-col lg:flex-row items-center w-full rounded-[20px] overflow-hidden bg-absolute-black pt-[40px] hd:pt-[60px] 4k:pt-[80px] gap-[50px]">
+                      <div
+                        class="z-100 flex flex-col justify-between order-2 leading-normal text-grey-70 lg:w-1/2 lg:order-1 h-[100%]">
+                        <h5 class="text-2xl font-bold text-absolute-white">
+                          Excelsio Moments — фотогалерея
+                        </h5>
+                        <div
+                          class="read-more-wrapper mt-[30px] xl:mt-[40px] 4k:mt-[50px]">
+                          <h6 class="flex items-center gap-2 decor__list">
+                            <img class="w-[20px] h-[20px]"
+                              src="/src/icon/star.svg" alt="star" />
+                            Описание:
+                          </h6>
+                          <p class="pl-[30px] text">
+                            Минималистичный сайт-витрина для демонстрации
+                            фоторабот.
+                            Создан для быстрой загрузки, удобного просмотра и
+                            перехода в Telegram-канал с полным архивом съёмок.
+                            <span class="dots">...</span>
+                          </p>
+                          <div class="hidden md:block read-more-text">
+                            <h6
+                              class="flex items-center gap-2 mt-3 decor__list">
+                              <img class="w-[20px] h-[20px]"
+                                src="/src/icon/star.svg" alt="star" />
+                              Технологии:
+                            </h6>
+                            <p class="pl-[30px] text">
+                              HTML, CSS
+                            </p>
+                            <h6
+                              class="flex items-center gap-2 mt-3 decor__list not-visited">
+                              <img class="w-[20px] h-[20px]"
+                                src="/src/icon/star.svg" alt="star" />
+                              Что внутри:
+                            </h6>
+                            <p class="pl-[20px] text">
+                              • Лёгкая адаптивная вёрстка<br>
+                              • Фокус на фотографиях без визуального шума<br>
+                              • Ультраминималистичный интерфейс<br>
+                              • Быстрая загрузка за счёт отсутствия
+                              фреймворков<br>
+                              • Интеграция с Telegram-каналом
+                            </p>
+                            <p
+                              class="mt-5 text-sm italic text-grey-50 pl-[10px]">
+                              Личный проект. Сделан для себя, с вниманием к
+                              эстетике и
+                              удобству.
+                            </p>
+                          </div>
+                          <button
+                            class="pl-[10px] mt-4 underline read-more-toggle text-purple-80 md:hidden">
+                            Читать больше
+                          </button>
+                        </div>
+                      </div>
+                      <a class="web__link" target="_blank"
+                        href="https://excelsio-moments.excelsio-moments.ru/">
+                        <img class="web__img will gsap-rt"
+                          data-speed=".9"
+                          src="https://ik.imagekit.io/Excelsio/new-excelsio-moments/excelsio-moments.png?updatedAt=1749394859316"
+                          alt="Excelsio Moments"></a>
+                    </div>
+                  </div>
+
+                  <!-- Слайд 4 — Pet-проекты -->
+                  <div class="px-2 swiper-slide">
+                    <div
+                      class="flex flex-col lg:flex-row items-center w-full rounded-[20px] overflow-hidden bg-absolute-black pt-[40px] hd:pt-[60px] 4k:pt-[80px] gap-[50px]">
+                      <div
+                        class="z-100 flex flex-col justify-between order-2 leading-normal text-grey-70 lg:w-1/2 lg:order-1 h-[100%]">
+                        <h5 class="text-2xl font-bold text-absolute-white">
+                          ...и ещё множество pet-проектов
+                        </h5>
+                        <div
+                          class="read-more-wrapper mt-[30px] xl:mt-[40px] 4k:mt-[50px]">
+                          <h6 class="flex items-center gap-2 decor__list">
+                            <img class="w-[20px] h-[20px]"
+                              src="/src/icon/star.svg" alt="star" />
+                            Описание:
+                          </h6>
+                          <p class="pl-[30px] text">
+                            Каждый из них — это не просто тренировка навыков, а
+                            способ выразить стиль, атмосферу и внимание к
+                            деталям.
+                            Я
+                            делаю сайты, в которые вкладываю душу — от идеи до
+                            адаптива.
+                            <span class="dots">...</span>
+                          </p>
+                          <div class="hidden md:block read-more-text">
+                            <h6
+                              class="flex items-center gap-2 mt-3 decor__list not-visited">
+                              <img class="w-[20px] h-[20px]"
+                                src="/src/icon/star.svg" alt="star" />
+                              Что внутри:
+                            </h6>
+                            <p class="pl-[20px] text">
+                              • Лэндинги, галереи, промо-страницы, эксперименты
+                              с
+                              анимацией<br>
+                              • Прокачка визуального языка<br>
+                              • Собственный дизайн и адаптив<br>
+                              • Отработка новых технологий<br>
+                              • Всё сделано самостоятельно без шаблонов
+                            </p>
+                            <p
+                              class="mt-5 text-sm italic text-grey-50 pl-[10px]">
+                              Лэндинги, галереи, промо-страницы, эксперименты с
+                              анимацией, прокачка визуального языка — всё это
+                              часть
+                              моего пути как разработчика и творца.
+                            </p>
+                          </div>
+                          <button
+                            class="pl-[10px] mt-4 underline read-more-toggle text-purple-80 md:hidden">
+                            Читать больше
+                          </button>
+                        </div>
+                      </div>
+                      <a class="web__link gsap-rt" target="_blank"
+                        href="https://github.com/Excelsi0">
+                        <img class="web__img will gsap-rt"
+                          data-speed=".9"
+                          src="https://ik.imagekit.io/Excelsio/new-excelsio-moments/pet-cover.jpg?updatedAt=1749394858446"
+                          alt="pet projects preview"></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </section>
+
+          <section class="overflow-hidden section">
+            <div class="cont">
+
+              <div class="flex items-end justify-between bar">
+                <div>
+                  <h2 class="page__title">Фото</h2>
+                  <h3 class="page__subtitle">Мир через мой объектив</h3>
+                </div>
+                <div class="relative flex gap-4 arrow__wrap">
+                  <button class="arrow arrow-prev_gallery pb-[2.5px] pr-[2.5px]"
+                    aria-label="Предыдущий слайд">‹</button>
+                  <button class="arrow arrow-next_gallery pb-[2.5px] pl-[2.5px]"
+                    aria-label="Следующий слайд">›</button>
+                </div>
+              </div>
+
+              <!-- Слайдер -->
+              <div class="relative mt-[10px] lg:mt-[20px] 4k:mt-[30px]">
+                <div class="swiper gallery__swiper !overflow-hidden">
+                  <div class="swiper-wrapper">
+                    <div class="px-2 swiper-slide">
+                      <a
+                        href="https://ik.imagekit.io/Excelsio/new-excelsio-moments/photo24.jpeg?updatedAt=1749394866325"
+                        data-fancybox="gallery"
+                        data-caption="Моя работа">
+                        <img class="gallery__img"
+                          data-swiper-parallax="50%"
+                          src="https://ik.imagekit.io/Excelsio/new-excelsio-moments/photo24.jpeg?updatedAt=1749394866325"
+                          alt>
+                      </a>
+                    </div>
+                    <div class="px-2 swiper-slide">
+                      <a
+                        href="https://ik.imagekit.io/Excelsio/new-excelsio-moments/photo25.jpeg?updatedAt=1749394866111"
+                        data-fancybox="gallery"
+                        data-caption="Моя работа">
+                        <img class="gallery__img"
+                          data-swiper-parallax="50%"
+                          src="https://ik.imagekit.io/Excelsio/new-excelsio-moments/photo25.jpeg?updatedAt=1749394866111"
+                          alt>
+                      </a>
+                    </div>
+                    <div class="px-2 swiper-slide">
+                      <a
+                        href="https://ik.imagekit.io/Excelsio/new-excelsio-moments/photo26.jpeg?updatedAt=1749394866473"
+                        data-fancybox="gallery"
+                        data-caption="Моя работа">
+                        <img class="gallery__img"
+                          data-swiper-parallax="50%"
+                          src="https://ik.imagekit.io/Excelsio/new-excelsio-moments/photo26.jpeg?updatedAt=1749394866473"
+                          alt>
+                      </a>
+                    </div>
+                    <div class="px-2 swiper-slide">
+                      <a
+                        href="https://ik.imagekit.io/Excelsio/new-excelsio-moments/photo21.jpeg?updatedAt=1749394865330"
+                        data-fancybox="gallery"
+                        data-caption="Моя работа">
+                        <img class="gallery__img"
+                          data-swiper-parallax="50%"
+                          src="https://ik.imagekit.io/Excelsio/new-excelsio-moments/photo21.jpeg?updatedAt=1749394865330"
+                          alt>
+                      </a>
+                    </div>
+                    <div class="px-2 swiper-slide">
+                      <a
+                        href="https://ik.imagekit.io/Excelsio/new-excelsio-moments/photo22.jpeg?updatedAt=1749394865588"
+                        data-fancybox="gallery"
+                        data-caption="Моя работа">
+                        <img class="gallery__img"
+                          data-swiper-parallax="50%"
+                          src="https://ik.imagekit.io/Excelsio/new-excelsio-moments/photo22.jpeg?updatedAt=1749394865588"
+                          alt>
+                      </a>
+                    </div>
+                    <div class="px-2 swiper-slide">
+                      <a
+                        href="https://ik.imagekit.io/Excelsio/new-excelsio-moments/photo23.jpeg?updatedAt=1749394865251"
+                        data-fancybox="gallery"
+                        data-caption="Моя работа">
+                        <img class="gallery__img"
+                          data-swiper-parallax="50%"
+                          src="https://ik.imagekit.io/Excelsio/new-excelsio-moments/photo23.jpeg?updatedAt=1749394865251"
+                          alt>
+                      </a>
+                    </div>
+                    <div class="px-2 swiper-slide">
+                      <a
+                        href="https://ik.imagekit.io/Excelsio/new-excelsio-moments/photo1.jpg?updatedAt=1749394858871"
+                        data-fancybox="gallery"
+                        data-caption="Моя работа">
+                        <img class="gallery__img"
+                          data-swiper-parallax="50%"
+                          src="https://ik.imagekit.io/Excelsio/new-excelsio-moments/photo1.jpg?updatedAt=1749394858871"
+                          alt>
+                      </a>
+                    </div>
+                    <div class="px-2 swiper-slide">
+                      <a
+                        href="https://ik.imagekit.io/Excelsio/new-excelsio-moments/photo2.jpg?updatedAt=1749394858417"
+                        data-fancybox="gallery"
+                        data-caption="Моя работа">
+                        <img class="gallery__img"
+                          data-swiper-parallax="50%"
+                          src="https://ik.imagekit.io/Excelsio/new-excelsio-moments/photo2.jpg?updatedAt=1749394858417"
+                          alt>
+                      </a>
+                    </div>
+                    <div class="px-2 swiper-slide">
+                      <a
+                        href="https://ik.imagekit.io/Excelsio/new-excelsio-moments/photo3.jpg?updatedAt=1749394858820"
+                        data-fancybox="gallery"
+                        data-caption="Моя работа">
+                        <img class="gallery__img"
+                          data-swiper-parallax="50%"
+                          src="https://ik.imagekit.io/Excelsio/new-excelsio-moments/photo3.jpg?updatedAt=1749394858820"
+                          alt>
+                      </a>
+                    </div>
+                    <div class="px-2 swiper-slide">
+                      <a
+                        href="https://ik.imagekit.io/Excelsio/new-excelsio-moments/photo14.jpeg?updatedAt=1749394862291"
+                        data-fancybox="gallery"
+                        data-caption="Моя работа">
+                        <img class="gallery__img"
+                          data-swiper-parallax="50%"
+                          src="https://ik.imagekit.io/Excelsio/new-excelsio-moments/photo14.jpeg?updatedAt=1749394862291"
+                          alt>
+                      </a>
+                    </div>
+                    <div class="px-2 swiper-slide">
+                      <a
+                        href="https://ik.imagekit.io/Excelsio/new-excelsio-moments/photo5.jpg?updatedAt=1749394863251"
+                        data-fancybox="gallery"
+                        data-caption="Моя работа">
+                        <img class="gallery__img"
+                          data-swiper-parallax="50%"
+                          src="https://ik.imagekit.io/Excelsio/new-excelsio-moments/photo5.jpg?updatedAt=1749394863251"
+                          alt>
+                      </a>
+                    </div>
+                    <div class="px-2 swiper-slide">
+                      <a
+                        href="https://ik.imagekit.io/Excelsio/new-excelsio-moments/photo6.jpg?updatedAt=1749394863881"
+                        data-fancybox="gallery"
+                        data-caption="Моя работа">
+                        <img class="gallery__img"
+                          data-swiper-parallax="50%"
+                          src="https://ik.imagekit.io/Excelsio/new-excelsio-moments/photo6.jpg?updatedAt=1749394863881"
+                          alt>
+                      </a>
+                    </div>
+                    <div class="px-2 swiper-slide">
+                      <a
+                        href="https://ik.imagekit.io/Excelsio/new-excelsio-moments/photo7.jpg?updatedAt=1749394862169"
+                        data-fancybox="gallery"
+                        data-caption="Моя работа">
+                        <img class="gallery__img"
+                          data-swiper-parallax="50%"
+                          src="https://ik.imagekit.io/Excelsio/new-excelsio-moments/photo7.jpg?updatedAt=1749394862169"
+                          alt>
+                      </a>
+                    </div>
+                    <div class="px-2 swiper-slide">
+                      <a
+                        href="https://ik.imagekit.io/Excelsio/new-excelsio-moments/photo8.jpg?updatedAt=1749394862234"
+                        data-fancybox="gallery"
+                        data-caption="Моя работа">
+                        <img class="gallery__img"
+                          data-swiper-parallax="50%"
+                          src="https://ik.imagekit.io/Excelsio/new-excelsio-moments/photo8.jpg?updatedAt=1749394862234"
+                          alt>
+                      </a>
+                    </div>
+                    <div class="px-2 swiper-slide">
+                      <a
+                        href="https://ik.imagekit.io/Excelsio/new-excelsio-moments/photo9.jpeg?updatedAt=1749394862423"
+                        data-fancybox="gallery"
+                        data-caption="Моя работа">
+                        <img class="gallery__img"
+                          data-swiper-parallax="50%"
+                          src="https://ik.imagekit.io/Excelsio/new-excelsio-moments/photo9.jpeg?updatedAt=1749394862423"
+                          alt>
+                      </a>
+                    </div>
+                    <div class="px-2 swiper-slide">
+                      <a
+                        href="https://ik.imagekit.io/Excelsio/new-excelsio-moments/photo10.jpeg?updatedAt=1749394862197"
+                        data-fancybox="gallery"
+                        data-caption="Моя работа">
+                        <img class="gallery__img"
+                          data-swiper-parallax="50%"
+                          src="https://ik.imagekit.io/Excelsio/new-excelsio-moments/photo10.jpeg?updatedAt=1749394862197"
+                          alt>
+                      </a>
+                    </div>
+                    <div class="px-2 swiper-slide">
+                      <a
+                        href="https://ik.imagekit.io/Excelsio/new-excelsio-moments/photo11.jpeg?updatedAt=1749394862366"
+                        data-fancybox="gallery"
+                        data-caption="Моя работа">
+                        <img class="gallery__img"
+                          data-swiper-parallax="50%"
+                          src="https://ik.imagekit.io/Excelsio/new-excelsio-moments/photo11.jpeg?updatedAt=1749394862366g"
+                          alt>
+                      </a>
+                    </div>
+                    <div class="px-2 swiper-slide">
+                      <a
+                        href="https://ik.imagekit.io/Excelsio/new-excelsio-moments/photo12.jpeg?updatedAt=1749394862382"
+                        data-fancybox="gallery"
+                        data-caption="Моя работа">
+                        <img class="gallery__img"
+                          data-swiper-parallax="50%"
+                          src="https://ik.imagekit.io/Excelsio/new-excelsio-moments/photo12.jpeg?updatedAt=1749394862382"
+                          alt>
+                      </a>
+                    </div>
+                    <div class="px-2 swiper-slide">
+                      <a
+                        href="https://ik.imagekit.io/Excelsio/new-excelsio-moments/photo13.jpeg?updatedAt=1749394862371"
+                        data-fancybox="gallery"
+                        data-caption="Моя работа">
+                        <img class="gallery__img"
+                          data-swiper-parallax="50%"
+                          src="https://ik.imagekit.io/Excelsio/new-excelsio-moments/photo13.jpeg?updatedAt=1749394862371"
+                          alt>
+                      </a>
+                    </div>
+                    <div class="px-2 swiper-slide">
+                      <a
+                        href="https://ik.imagekit.io/Excelsio/new-excelsio-moments/photo4.jpg?updatedAt=1749394858592"
+                        data-fancybox="gallery"
+                        data-caption="Моя работа">
+                        <img class="gallery__img"
+                          data-swiper-parallax="50%"
+                          src="https://ik.imagekit.io/Excelsio/new-excelsio-moments/photo4.jpg?updatedAt=1749394858592"
+                          alt>
+                      </a>
+                    </div>
+                    <div class="px-2 swiper-slide">
+                      <a
+                        href="https://ik.imagekit.io/Excelsio/new-excelsio-moments/photo15.jpeg?updatedAt=1749394864288"
+                        data-fancybox="gallery"
+                        data-caption="Моя работа">
+                        <img class="gallery__img"
+                          data-swiper-parallax="50%"
+                          src="https://ik.imagekit.io/Excelsio/new-excelsio-moments/photo15.jpeg?updatedAt=1749394864288"
+                          alt>
+                      </a>
+                    </div>
+                    <div class="px-2 swiper-slide">
+                      <a
+                        href="https://ik.imagekit.io/Excelsio/new-excelsio-moments/photo16.jpeg?updatedAt=1749394864238"
+                        data-fancybox="gallery"
+                        data-caption="Моя работа">
+                        <img class="gallery__img"
+                          data-swiper-parallax="50%"
+                          src="https://ik.imagekit.io/Excelsio/new-excelsio-moments/photo16.jpeg?updatedAt=1749394864238"
+                          alt>
+                      </a>
+                    </div>
+                    <div class="px-2 swiper-slide">
+                      <a
+                        href="https://ik.imagekit.io/Excelsio/new-excelsio-moments/photo17.jpeg?updatedAt=1749394864359"
+                        data-fancybox="gallery"
+                        data-caption="Моя работа">
+                        <img class="gallery__img"
+                          data-swiper-parallax="50%"
+                          src="https://ik.imagekit.io/Excelsio/new-excelsio-moments/photo17.jpeg?updatedAt=1749394864359"
+                          alt>
+                      </a>
+                    </div>
+                    <div class="px-2 swiper-slide">
+                      <a
+                        href="https://ik.imagekit.io/Excelsio/new-excelsio-moments/photo18.jpeg?updatedAt=1749394865197"
+                        data-fancybox="gallery"
+                        data-caption="Моя работа">
+                        <img class="gallery__img"
+                          data-swiper-parallax="50%"
+                          src="https://ik.imagekit.io/Excelsio/new-excelsio-moments/photo18.jpeg?updatedAt=1749394865197"
+                          alt>
+                      </a>
+                    </div>
+                    <div class="px-2 swiper-slide">
+                      <a
+                        href="https://ik.imagekit.io/Excelsio/new-excelsio-moments/photo19.jpeg?updatedAt=1749394865040"
+                        data-fancybox="gallery"
+                        data-caption="Моя работа">
+                        <img class="gallery__img"
+                          data-swiper-parallax="50%"
+                          src="https://ik.imagekit.io/Excelsio/new-excelsio-moments/photo19.jpeg?updatedAt=1749394865040"
+                          alt>
+                      </a>
+                    </div>
+                    <div class="px-2 swiper-slide">
+                      <a
+                        href="https://ik.imagekit.io/Excelsio/new-excelsio-moments/photo20.jpeg?updatedAt=1749394864979"
+                        data-fancybox="gallery"
+                        data-caption="Моя работа">
+                        <img class="gallery__img"
+                          data-swiper-parallax="50%"
+                          src="https://ik.imagekit.io/Excelsio/new-excelsio-moments/photo20.jpeg?updatedAt=1749394864979"
+                          alt>
+                      </a>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </section>
+
+          <section class="section" id="faq">
+            <div class="cont">
+              <div class="flex items-end justify-between bar ">
+                <div>
+                  <h2 class="page__title">faq</h2>
+                  <h3 class="page__subtitle">Часто задаваемые вопросы</h3>
+                </div>
+              </div>
+
+              <details
+                class="accordion accordion-odd mt-[10px] lg:mt-[20px] 4k:mt-[30px]">
+                <summary
+                  class="accardion__title">Сколько
+                  стоит разработка сайта?</summary>
+                <p class="accordion__text">Цена зависит от объёма и
+                  сложности
+                  проекта. Простой лендинг — <span
+                    class="whitespace-nowrap">от
+                    15 000 ₽</span>, многостраничный сайт —
+                  <span class="whitespace-nowrap">от 25 000 ₽.</span></p>
+              </details>
+
+              <details class="accordion accordion-even">
+                <summary
+                  class="accardion__title">Сколько
+                  времени занимает создание сайта?</summary>
+                <p class="accordion__text">Обычно от 5 до 30 рабочих дней в
+                  зависимости от объема и наличия готового
+                  контента/макета.</p>
+              </details>
+
+              <details class="accordion accordion-odd">
+                <summary
+                  class="accardion__title">Можно
+                  ли
+                  вносить изменения после запуска?</summary>
+                <p class="accordion__text">Да, любые правки возможны.
+                  Небольшие
+                  изменения после запуска — бесплатно в течение 7 дней.</p>
+              </details>
+
+              <details class="accordion accordion-even">
+                <summary
+                  class="accardion__title">Можете
+                  загрузить сайт на хостинг?</summary>
+                <p class="accordion__text">Да. Помогу с загрузкой,
+                  подключением домена и базовой настройкой. Также подскажу,
+                  где
+                  лучше зарегистрировать хостинг и домен.
+                </p></p>
+            </details>
+
+            <details class="accordion accordion-odd">
+              <summary
+                class="accardion__title">Вы
+                работаете
+                по предоплате?</summary>
+              <p class="accordion__text">Да. Обычно 50% предоплаты,
+                остальное
+                — после завершения проекта и одобрения.</p>
+            </details>
+
+          </div>
+        </section>
+
+        <section>
+          <div
+            class="relative cont h-[100px] md:h-[200px] flex items-center justify-end">
+            <h6
+              class="font-black md:text-[80px] text-[60px] lg:text-[150px] 4k:text-[200px] uppercase text-[#232329]">EXCELSIO</h6>
+
+          </div>
+        </section>
+
+        <section class>
+          <div
+            class="mt-0 overflow-hidden marquee-container whitespace-nowrap bg-dark-08 text-purple-90">
+            <div class="inline-flex marquee-track animate-marquee">
+              <ul class="flex py-4 uppercase list-none bg-dark-06 gap-[40px]">
+                <li class="decor__list"><img src="src/icon/star.svg"
+                    alt="star">
+                  Вёрстка
+                  красивых сайтов</li>
+                <li class="decor__list"><img src="src/icon/star.svg"
+                    alt="star">
+                  Tailwind
+                  CSS</li>
+                <li class="decor__list"><img src="src/icon/star.svg"
+                    alt="star">
+                  SASS</li>
+                <li class="decor__list"><img src="src/icon/star.svg"
+                    alt="star">
+                  CSS</li>
+                <li class="decor__list"><img src="src/icon/star.svg"
+                    alt="star">
+                  JavaScript</li>
+                <li class="decor__list"><img src="src/icon/star.svg"
+                    alt="star">
+                  Python</li>
+                <li class="decor__list"><img src="src/icon/star.svg"
+                    alt="star">
+                  Анимации</li>
+                <li class="decor__list"><img src="src/icon/star.svg"
+                    alt="star">
+                  Адаптив</li>
+                <li class="decor__list"><img src="src/icon/star.svg"
+                    alt="star">
+                  Дизайн
+                  с
+                  вниманием к деталям</li>
+                <li class="decor__list"><img src="src/icon/star.svg"
+                    alt="star">
+                  Фотосъёмка предметов</li>
+                <li class="decor__list"><img src="src/icon/star.svg"
+                    alt="star">
+                  Фото
+                  как
+                  стиль и брендинг</li>
+                <li class="decor__list"><img src="src/icon/star.svg"
+                    alt="star">
+                  Атмосферные кадры с людьми</li>
+                <li class="decor__list"><img src="src/icon/star.svg"
+                    alt="star">
+                  Уличная съёмка</li>
+                <li class="decor__list"></li>
+              </ul>
+              <!-- Дубликат -->
+              <ul
+                class="flex items-center gap-6 uppercase list-none bg-dark-06 gap-[40px]"
+                aria-hidden="true">
+                <li class="decor__list"><img src="src/icon/star.svg"
+                    alt="star">
+                  Вёрстка
+                  красивых сайтов</li>
+                <li class="decor__list"><img src="src/icon/star.svg"
+                    alt="star">
+                  Tailwind
+                  CSS</li>
+                <li class="decor__list"><img src="src/icon/star.svg"
+                    alt="star">
+                  SASS</li>
+                <li class="decor__list"><img src="src/icon/star.svg"
+                    alt="star">
+                  CSS</li>
+                <li class="decor__list"><img src="src/icon/star.svg"
+                    alt="star">
+                  JavaScript</li>
+                <li class="decor__list"><img src="src/icon/star.svg"
+                    alt="star">
+                  Python</li>
+                <li class="decor__list"><img src="src/icon/star.svg"
+                    alt="star">
+                  Анимации</li>
+                <li class="decor__list"><img src="src/icon/star.svg"
+                    alt="star">
+                  Адаптив</li>
+                <li class="decor__list"><img src="src/icon/star.svg"
+                    alt="star">
+                  Дизайн
+                  с
+                  вниманием к деталям</li>
+                <li class="decor__list"><img src="src/icon/star.svg"
+                    alt="star">
+                  Фотосъёмка предметов</li>
+                <li class="decor__list"><img src="src/icon/star.svg"
+                    alt="star">
+                  Фото
+                  как
+                  стиль и брендинг</li>
+                <li class="decor__list"><img src="src/icon/star.svg"
+                    alt="star">
+                  Атмосферные кадры с людьми</li>
+                <li class="decor__list"><img src="src/icon/star.svg"
+                    alt="star">
+                  Уличная съёмка</li>
+                <li class="decor__list"></li>
+              </ul>
+            </div>
+          </div>
+        </section>
 
         <footer class="m-4 rounded-[20px] shadow-sm dark:bg-dark-08">
           <div class="w-full max-w-screen-xl p-4 mx-auto md:py-8">
@@ -1052,9 +1130,11 @@
                 class="text-purple-90">Сделано с любовью.</span></span>
           </div>
         </footer>
+      </div>
 
-      </main>
-      <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-      <script type="module" src="/src/js/main.js"></script>
-    </body>
-  </html>
+    </main>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script type="module" src="/src/js/main.js"></script>
+  </body>
+</html>

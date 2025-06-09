@@ -129,21 +129,10 @@
     @apply mt-[30px] text-purple-90;
 }
 
-.wow-title {
-    font-size: 4rem;
-    font-weight: bold;
-    letter-spacing: 0.1em;
-    color: #ab67ff;
-    display: flex;
-    gap: 0.1em;
-    opacity: 0;
-    transform: translateY(50px);
+.simpleParallax {
+    @apply rounded-[20px];
 }
-.wow-img {
-    opacity: 0;
-    transform: scale(0.7) translateY(60px);
-    transition: box-shadow 0.3s;
-}
-.wow-img.gs-animated {
-    box-shadow: 0 16px 60px #ab67ff55;
+
+.will {
+    will-change: transform;
 }
