@@ -1,12 +1,14 @@
 import "flowbite";
 
 import gsap from "gsap";
+import { ScrollToPlugin } from "gsap/ScrollToPlugin";
+gsap.registerPlugin(ScrollToPlugin);
 
 import ScrollTrigger from "gsap/ScrollTrigger";
 import ScrollSmoother from "gsap/ScrollSmoother";
 
 import Swiper from "swiper";
-import { Navigation, Autoplay, Parallax } from "swiper/modules";
+import { Navigation, Autoplay, Parallax, FreeMode, Controller } from "swiper/modules";
 
 import "swiper/css";
 import "swiper/css/navigation";
@@ -27,41 +29,63 @@ document.addEventListener("DOMContentLoaded", () => {
     const sliderMain = new Swiper(".slider_main", {
         slidesPerView: 1,
         spaceBetween: 20,
-        freeMode: {
-            enabled: true,
-            momentum: false,
-            sticky: false,
+        speed: 1000,
+        loop: true,
+        autoplay: {
+            delay: 1000, // задержка между переключениями
+            disableOnInteraction: true, // чтобы не останавливался при взаимодействии
         },
-        // centeredSlides: false,
-        parallax: true,
-        breakpoints: {
-            680: {
-                spaceBetween: 60,
-                slidesPerView: 3,
-            },
-        },
-        modules: [Parallax],
-    });
-
-    const sliderBg = new Swiper(".slider_bg", {
-        slidesPerView: 1,
-        spaceBetween: 20,
         freeMode: {
             enabled: true,
             momentum: true,
             sticky: true,
         },
-        // centeredSlides: false,
+
+        centeredSlides: true,
         parallax: true,
-        spaceBetween: 20,
-        allowTouchMove: false, // Запрещаем ручное перетаскивание
         breakpoints: {
-            680: {
+            660: {
                 spaceBetween: 60,
+                slidesPerView: 2,
+            },
+            992: {
                 slidesPerView: 3,
             },
         },
-        modules: [Parallax],
+        navigation: {
+            nextEl: ".arrow-next_gallery",
+            prevEl: ".arrow-prev_gallery",
+        },
+        modules: [Parallax, FreeMode, Navigation, Autoplay, Controller],
+    });
+
+    const sliderBg = new Swiper(".slider_bg", {
+        slidesPerView: 1,
+        spaceBetween: 20,
+        speed: 1000,
+        loop: true,
+
+        freeMode: {
+            enabled: true,
+            momentum: true,
+            sticky: true,
+        },
+        centeredSlides: true,
+        parallax: true,
+        breakpoints: {
+            660: {
+                spaceBetween: 60,
+                slidesPerView: 2,
+            },
+            992: {
+                slidesPerView: 3,
+            },
+        },
+        navigation: {
+            nextEl: ".arrow-next_gallery",
+            prevEl: ".arrow-prev_gallery",
+        },
+        modules: [Parallax, FreeMode, Navigation, Controller],
     });
 
     // Синхронизация в реальном времени
@@ -72,6 +96,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // Инициализация начальной позиции
     sliderBg.setProgress(sliderMain.progress, 0);
+    sliderMain.controller.control = sliderBg;
 
     //свайпер работ
     const swiper = new Swiper(".project__swiper", {
@@ -85,33 +110,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
         modules: [Navigation],
     });
-
-    // const swp_gallery = new Swiper(".gallery__swiper", {
-    //     slidesPerView: 1,
-    //     loop: true,
-    //     speed: 600,
-    //     spaceBetween: 18,
-    //     autoplay: {
-    //         delay: 3500, // задержка между переключениями
-    //         disableOnInteraction: false, // чтобы не останавливался при взаимодействии
-    //     },
-    //     breakpoints: {
-    //         640: {
-    //             slidesPerView: 2,
-    //         },
-    //         1024: {
-    //             slidesPerView: 3,
-    //         },
-    //     },
-    //     parallax: true,
-
-    //     navigation: {
-    //         nextEl: ".arrow-next_gallery",
-    //         prevEl: ".arrow-prev_gallery",
-    //     },
-
-    //     modules: [Navigation, Autoplay, Parallax],
-    // });
 });
 
 // читать больше
@@ -236,4 +234,21 @@ itemsR.forEach((item) => {
             },
         }
     );
+});
+
+const smoother = ScrollSmoother.create({
+    wrapper: ".wrapper",
+    content: ".content",
+    smooth: 1.3,
+    effects: true,
+});
+
+document.querySelectorAll('a[href^="#"]').forEach((link) => {
+    link.addEventListener("click", function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute("href"));
+        if (target) {
+            smoother.scrollTo(target, true, "top top");
+        }
+    });
 });
