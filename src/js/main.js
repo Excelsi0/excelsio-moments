@@ -1,6 +1,7 @@
 import "flowbite";
 
 import gsap from "gsap";
+
 import ScrollTrigger from "gsap/ScrollTrigger";
 import ScrollSmoother from "gsap/ScrollSmoother";
 
@@ -23,6 +24,55 @@ Fancybox.bind("[data-fancybox]", {
 
 //свайпер
 document.addEventListener("DOMContentLoaded", () => {
+    const sliderMain = new Swiper(".slider_main", {
+        slidesPerView: 1,
+        spaceBetween: 20,
+        freeMode: {
+            enabled: true,
+            momentum: false,
+            sticky: false,
+        },
+        // centeredSlides: false,
+        parallax: true,
+        breakpoints: {
+            680: {
+                spaceBetween: 60,
+                slidesPerView: 3,
+            },
+        },
+        modules: [Parallax],
+    });
+
+    const sliderBg = new Swiper(".slider_bg", {
+        slidesPerView: 1,
+        spaceBetween: 20,
+        freeMode: {
+            enabled: true,
+            momentum: true,
+            sticky: true,
+        },
+        // centeredSlides: false,
+        parallax: true,
+        spaceBetween: 20,
+        allowTouchMove: false, // Запрещаем ручное перетаскивание
+        breakpoints: {
+            680: {
+                spaceBetween: 60,
+                slidesPerView: 3,
+            },
+        },
+        modules: [Parallax],
+    });
+
+    // Синхронизация в реальном времени
+    sliderMain.on("sliderMove", () => {
+        // Передаём текущий прогресс переднего слайдера заднему
+        sliderBg.setProgress(sliderMain.progress, 300); // 300ms — скорость анимации
+    });
+
+    // Инициализация начальной позиции
+    sliderBg.setProgress(sliderMain.progress, 0);
+
     //свайпер работ
     const swiper = new Swiper(".project__swiper", {
         slidesPerView: 1,
@@ -36,31 +86,32 @@ document.addEventListener("DOMContentLoaded", () => {
         modules: [Navigation],
     });
 
-    //свайпер галереи
-    const swp_gallery = new Swiper(".gallery__swiper", {
-        slidesPerView: 1,
-        loop: true,
-        autoplay: {
-            delay: 3500, // задержка между переключениями
-            disableOnInteraction: false, // чтобы не останавливался при взаимодействии
-        },
-        breakpoints: {
-            640: {
-                slidesPerView: 2,
-            },
-            1024: {
-                slidesPerView: 3,
-            },
-        },
-        parallax: true,
+    // const swp_gallery = new Swiper(".gallery__swiper", {
+    //     slidesPerView: 1,
+    //     loop: true,
+    //     speed: 600,
+    //     spaceBetween: 18,
+    //     autoplay: {
+    //         delay: 3500, // задержка между переключениями
+    //         disableOnInteraction: false, // чтобы не останавливался при взаимодействии
+    //     },
+    //     breakpoints: {
+    //         640: {
+    //             slidesPerView: 2,
+    //         },
+    //         1024: {
+    //             slidesPerView: 3,
+    //         },
+    //     },
+    //     parallax: true,
 
-        navigation: {
-            nextEl: ".arrow-next_gallery",
-            prevEl: ".arrow-prev_gallery",
-        },
+    //     navigation: {
+    //         nextEl: ".arrow-next_gallery",
+    //         prevEl: ".arrow-prev_gallery",
+    //     },
 
-        modules: [Navigation, Autoplay, Parallax],
-    });
+    //     modules: [Navigation, Autoplay, Parallax],
+    // });
 });
 
 // читать больше
