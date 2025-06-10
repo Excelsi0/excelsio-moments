@@ -19,6 +19,55 @@ import "@fancyapps/ui/dist/fancybox/fancybox.css";
 
 import "/src/css/style.css";
 
+// кнопка
+const mobileMenu = document.getElementById("mobile-menu");
+const menuPanel = mobileMenu.querySelector("div > div");
+const openBtn = document.getElementById("open-menu-btn");
+const closeBtn = document.getElementById("close-menu-btn");
+const menuLinks = document.querySelectorAll(".menu-link");
+
+// Функция блокировки скролла
+function lockScroll() {
+    document.body.style.overflow = "hidden";
+}
+
+// Функция разблокировки скролла
+function unlockScroll() {
+    document.body.style.overflow = "";
+}
+
+// Открытие меню
+openBtn.addEventListener("click", () => {
+    mobileMenu.classList.remove("hidden");
+    lockScroll(); // Блокируем скролл
+    setTimeout(() => menuPanel.classList.remove("-translate-x-full"), 10);
+});
+
+// Закрытие меню
+function closeMenu() {
+    menuPanel.classList.add("-translate-x-full");
+    setTimeout(() => {
+        mobileMenu.classList.add("hidden");
+        unlockScroll(); // Разблокируем скролл
+    }, 300);
+}
+
+closeBtn.addEventListener("click", closeMenu);
+menuLinks.forEach((link) => link.addEventListener("click", closeMenu));
+
+// Закрытие при клике вне меню
+mobileMenu.addEventListener("click", (e) => {
+    if (e.target === mobileMenu) closeMenu();
+});
+// При открытии меню
+document.body.style.overflow = "hidden";
+document.body.style.touchAction = "none"; // Для iOS
+
+// При закрытии меню
+document.body.style.overflow = "";
+document.body.style.touchAction = "";
+
+//*
 //открытые фотки
 Fancybox.bind("[data-fancybox]", {
     // Your custom options
@@ -204,38 +253,45 @@ if (ScrollTrigger.isTouch !== 1) {
 let itemsL = gsap.utils.toArray(".accordion-odd");
 let itemsR = gsap.utils.toArray(".accordion-even");
 
+// Для левых элементов (odd)
 itemsL.forEach((item) => {
     gsap.fromTo(
         item,
-        { x: -100 },
+        { x: -50, opacity: 0 }, // Уменьшил смещение и добавил fade-in
         {
             x: 0,
+            opacity: 1,
             scrollTrigger: {
                 trigger: item,
-                start: "top bottom",
-                end: "top 55%",
-                scrub: true,
+                start: "top 85%", // Анимация начинается позже
+                end: "top 40%",
+                scrub: 1, // Можно уменьшить scrub до 0.5-1 для меньшей задержки
+                markers: false, // Для отладки можно включить
+                invalidateOnRefresh: true, // Решает проблемы с перерасчётом
             },
         }
     );
 });
 
+// Для правых элементов (even)
 itemsR.forEach((item) => {
     gsap.fromTo(
         item,
-        { x: 100 },
+        { x: 50, opacity: 0 },
         {
             x: 0,
+            opacity: 1,
             scrollTrigger: {
                 trigger: item,
-                start: "top bottom",
-                end: "top 55%",
-                scrub: true,
+                start: "top 85%",
+                end: "top 40%",
+                scrub: 1,
+                markers: false,
+                invalidateOnRefresh: true,
             },
         }
     );
 });
-
 const smoother = ScrollSmoother.create({
     wrapper: ".wrapper",
     content: ".content",

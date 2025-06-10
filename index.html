@@ -34,7 +34,9 @@
 
               </ul>
               <a href="#main__contacts" class="hidden xl:block btn">Контакты</a>
+
               <button
+                id="open-menu-btn"
                 class="flex flex-col gap-1 p-5 border xl:hidden border-dark-12 rounded-tl-[12px] items-end"
                 type="button" data-drawer-target="drawer-disable-body-scrolling"
                 data-drawer-show="drawer-disable-body-scrolling"
@@ -44,35 +46,34 @@
                   class="w-[10px] h-[1.5px] bg-absolute-white"></span></button>
             </div>
 
-            <!-- drawer component -->
-            <div id="drawer-disable-body-scrolling"
-              class="fixed top-0 left-0 z-40 w-full h-full p-4 transition-transform -translate-x-full ovemask-r-from-yellow-300-y-auto sm:px-10 bg-dark-06 xl:hidden"
-              tabindex="-1"
-              aria-labelledby="drawer-disable-body-scrolling-label">
-              <h5 id="drawer-disable-body-scrolling-label"
-                class="text-base font-semibold text-gray-500 uppercase dark:text-gray-400">Меню</h5>
-              <button type="button"
-                data-drawer-hide="drawer-disable-body-scrolling"
-                aria-controls="drawer-disable-body-scrolling"
-                class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 absolute top-2.5 end-2.5 inline-flex items-center justify-center dark:hover:bg-gray-600 dark:hover:text-white">
-                <svg class="w-3 h-3" aria-hidden="true"
-                  xmlns="http://www.w3.org/2000/svg" fill="none"
-                  viewBox="0 0 14 14">
-                  <path stroke="currentColor" stroke-linecap="round"
-                    stroke-linejoin="round" stroke-width="2"
-                    d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6" />
-                </svg>
-                <span class="sr-only">Close menu</span>
-              </button>
-              <div class="py-10 overflow-y-auto">
-                <ul class="mt-5 space-y-10 font-medium">
-                  <li><a class="menu__link" href="main">Главная</a></li>
-                  <li><a class="menu__link" href="#main__contacts">Обо
-                      мне</a></li>
-                  <li><a class="menu__link" href="#work">Работы</a></li>
-                  <li><a class="menu__link"
-                      href="#faq">Faq</a></li>
-                </ul>
+            <div id="mobile-menu"
+              class="fixed inset-0 z-50 hidden bg-black bg-opacity-[0.15]">
+              <div
+                class="fixed top-0 left-0 w-full h-full transition-transform duration-300 ease-in-out transform -translate-x-full shadow-lg bg-absolute-black">
+                <div class="flex items-center justify-between p-4 border-b">
+                  <h5 class="text-lg font-semibold text-purple-300">Меню</h5>
+                  <button id="close-menu-btn"
+                    class="text-gray-500 hover:text-gray-700">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6"
+                      fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path stroke-linecap="round" stroke-linejoin="round"
+                        stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                    </svg>
+                  </button>
+                </div>
+                <div class="p-4 pt-[25%] overflow-y-auto text-center">
+                  <ul class="space-y-4">
+                    <li><a href="#main"
+                        class="block py-2 text-absolute-white hover:text-purple-300 menu-link text-[24px]">Главная</a></li>
+                    <li><a href="#about"
+                        class="block py-2 text-absolute-white hover:text-purple-300 menu-link text-[24px]">Обо
+                        мне</a></li>
+                    <li><a href="#work"
+                        class="block py-2 text-absolute-white hover:text-purple-300 menu-link text-[24px]">Работы</a></li>
+                    <li><a href="#faq"
+                        class="block py-2 text-absolute-white hover:text-purple-300 menu-link text-[24px]">FAQ</a></li>
+                  </ul>
+                </div>
               </div>
             </div>
 
@@ -214,7 +215,7 @@
         </section>
 
         <section
-          class="section">
+          class="section" id="about">
           <div class="cont">
             <div
               class="flex hd:flex-row flex-col flex-wrap items-center justify-between gap-[20px] border-b-[1px] border-dark-12 pb-[20px] hd:pb-[40px] 4k:pb-[50px]">
@@ -1052,173 +1053,173 @@
                   подключением домена и базовой настройкой. Также подскажу,
                   где
                   лучше зарегистрировать хостинг и домен.
-                </p></p>
-            </details>
+                </p>
+              </details>
 
-            <details class="accordion accordion-odd">
-              <summary
-                class="accardion__title">Вы
-                работаете
-                по предоплате?</summary>
-              <p class="accordion__text">Да. Обычно 50% предоплаты,
-                остальное
-                — после завершения проекта и одобрения.</p>
-            </details>
+              <details class="accordion accordion-odd">
+                <summary
+                  class="accardion__title">Вы
+                  работаете
+                  по предоплате?</summary>
+                <p class="accordion__text">Да. Обычно 50% предоплаты,
+                  остальное
+                  — после завершения проекта и одобрения.</p>
+              </details>
 
-          </div>
-        </section>
-
-        <section class>
-          <div
-            class="mt-0 overflow-hidden marquee-container whitespace-nowrap bg-dark-08 text-purple-90">
-            <div class="inline-flex marquee-track animate-marquee">
-              <ul class="flex py-4 uppercase list-none bg-dark-06 gap-[40px]">
-                <li class="decor__list"><img src="src/icon/star.svg"
-                    alt="star">
-                  Вёрстка
-                  красивых сайтов</li>
-                <li class="decor__list"><img src="src/icon/star.svg"
-                    alt="star">
-                  Tailwind
-                  CSS</li>
-                <li class="decor__list"><img src="src/icon/star.svg"
-                    alt="star">
-                  SASS</li>
-                <li class="decor__list"><img src="src/icon/star.svg"
-                    alt="star">
-                  CSS</li>
-                <li class="decor__list"><img src="src/icon/star.svg"
-                    alt="star">
-                  JavaScript</li>
-                <li class="decor__list"><img src="src/icon/star.svg"
-                    alt="star">
-                  Python</li>
-                <li class="decor__list"><img src="src/icon/star.svg"
-                    alt="star">
-                  Анимации</li>
-                <li class="decor__list"><img src="src/icon/star.svg"
-                    alt="star">
-                  Адаптив</li>
-                <li class="decor__list"><img src="src/icon/star.svg"
-                    alt="star">
-                  Дизайн
-                  с
-                  вниманием к деталям</li>
-                <li class="decor__list"><img src="src/icon/star.svg"
-                    alt="star">
-                  Фотосъёмка предметов</li>
-                <li class="decor__list"><img src="src/icon/star.svg"
-                    alt="star">
-                  Фото
-                  как
-                  стиль и брендинг</li>
-                <li class="decor__list"><img src="src/icon/star.svg"
-                    alt="star">
-                  Атмосферные кадры с людьми</li>
-                <li class="decor__list"><img src="src/icon/star.svg"
-                    alt="star">
-                  Уличная съёмка</li>
-                <li class="decor__list"></li>
-              </ul>
-              <!-- Дубликат -->
-              <ul
-                class="flex items-center uppercase list-none bg-dark-06 gap-[40px]"
-                aria-hidden="true">
-                <li class="decor__list"><img src="src/icon/star.svg"
-                    alt="star">
-                  Вёрстка
-                  красивых сайтов</li>
-                <li class="decor__list"><img src="src/icon/star.svg"
-                    alt="star">
-                  Tailwind
-                  CSS</li>
-                <li class="decor__list"><img src="src/icon/star.svg"
-                    alt="star">
-                  SASS</li>
-                <li class="decor__list"><img src="src/icon/star.svg"
-                    alt="star">
-                  CSS</li>
-                <li class="decor__list"><img src="src/icon/star.svg"
-                    alt="star">
-                  JavaScript</li>
-                <li class="decor__list"><img src="src/icon/star.svg"
-                    alt="star">
-                  Python</li>
-                <li class="decor__list"><img src="src/icon/star.svg"
-                    alt="star">
-                  Анимации</li>
-                <li class="decor__list"><img src="src/icon/star.svg"
-                    alt="star">
-                  Адаптив</li>
-                <li class="decor__list"><img src="src/icon/star.svg"
-                    alt="star">
-                  Дизайн
-                  с
-                  вниманием к деталям</li>
-                <li class="decor__list"><img src="src/icon/star.svg"
-                    alt="star">
-                  Фотосъёмка предметов</li>
-                <li class="decor__list"><img src="src/icon/star.svg"
-                    alt="star">
-                  Фото
-                  как
-                  стиль и брендинг</li>
-                <li class="decor__list"><img src="src/icon/star.svg"
-                    alt="star">
-                  Атмосферные кадры с людьми</li>
-                <li class="decor__list"><img src="src/icon/star.svg"
-                    alt="star">
-                  Уличная съёмка</li>
-                <li class="decor__list"></li>
-              </ul>
             </div>
-          </div>
-        </section>
+          </section>
 
-        <footer class="m-4 rounded-[20px] shadow-sm dark:bg-dark-08">
-          <div class="w-full max-w-screen-xl p-4 mx-auto md:py-8">
-            <div class="sm:flex sm:items-center sm:justify-between">
-              <a href="https://flowbite.com/"
-                class="flex items-center mb-4 space-x-3 sm:mb-0 rtl:space-x-reverse">
-                <img src="/src/icon/logo.png" class="h-8"
-                  alt="Flowbite Logo" />
-                <span
-                  class="self-center text-2xl font-semibold text-white whitespace-nowrap">ExceIsio</span>
-              </a>
-
-              <ul
-                class="flex flex-wrap items-center mb-6 text-sm font-medium text-gray-500 sm:mb-0 dark:text-gray-400">
-                <li>
-                  <a href="#main"
-                    class="hover:underline me-4 md:me-6">Главная</a>
-                </li>
-                <li>
-                  <a href="#main__contacts"
-                    class="hover:underline me-4 md:me-6">Обо
-                    мне</a>
-                </li>
-                <li>
-                  <a href="#work"
-                    class="hover:underline me-4 md:me-6">Работы</a>
-                </li>
-                <li>
-                  <a href="#faq" class="hover:underline">Faq</a>
-                </li>
-              </ul>
+          <section class>
+            <div
+              class="mt-0 overflow-hidden marquee-container whitespace-nowrap bg-dark-08 text-purple-90">
+              <div class="inline-flex marquee-track animate-marquee">
+                <ul class="flex py-4 uppercase list-none bg-dark-06 gap-[40px]">
+                  <li class="decor__list"><img src="src/icon/star.svg"
+                      alt="star">
+                    Вёрстка
+                    красивых сайтов</li>
+                  <li class="decor__list"><img src="src/icon/star.svg"
+                      alt="star">
+                    Tailwind
+                    CSS</li>
+                  <li class="decor__list"><img src="src/icon/star.svg"
+                      alt="star">
+                    SASS</li>
+                  <li class="decor__list"><img src="src/icon/star.svg"
+                      alt="star">
+                    CSS</li>
+                  <li class="decor__list"><img src="src/icon/star.svg"
+                      alt="star">
+                    JavaScript</li>
+                  <li class="decor__list"><img src="src/icon/star.svg"
+                      alt="star">
+                    Python</li>
+                  <li class="decor__list"><img src="src/icon/star.svg"
+                      alt="star">
+                    Анимации</li>
+                  <li class="decor__list"><img src="src/icon/star.svg"
+                      alt="star">
+                    Адаптив</li>
+                  <li class="decor__list"><img src="src/icon/star.svg"
+                      alt="star">
+                    Дизайн
+                    с
+                    вниманием к деталям</li>
+                  <li class="decor__list"><img src="src/icon/star.svg"
+                      alt="star">
+                    Фотосъёмка предметов</li>
+                  <li class="decor__list"><img src="src/icon/star.svg"
+                      alt="star">
+                    Фото
+                    как
+                    стиль и брендинг</li>
+                  <li class="decor__list"><img src="src/icon/star.svg"
+                      alt="star">
+                    Атмосферные кадры с людьми</li>
+                  <li class="decor__list"><img src="src/icon/star.svg"
+                      alt="star">
+                    Уличная съёмка</li>
+                  <li class="decor__list"></li>
+                </ul>
+                <!-- Дубликат -->
+                <ul
+                  class="flex items-center uppercase list-none bg-dark-06 gap-[40px]"
+                  aria-hidden="true">
+                  <li class="decor__list"><img src="src/icon/star.svg"
+                      alt="star">
+                    Вёрстка
+                    красивых сайтов</li>
+                  <li class="decor__list"><img src="src/icon/star.svg"
+                      alt="star">
+                    Tailwind
+                    CSS</li>
+                  <li class="decor__list"><img src="src/icon/star.svg"
+                      alt="star">
+                    SASS</li>
+                  <li class="decor__list"><img src="src/icon/star.svg"
+                      alt="star">
+                    CSS</li>
+                  <li class="decor__list"><img src="src/icon/star.svg"
+                      alt="star">
+                    JavaScript</li>
+                  <li class="decor__list"><img src="src/icon/star.svg"
+                      alt="star">
+                    Python</li>
+                  <li class="decor__list"><img src="src/icon/star.svg"
+                      alt="star">
+                    Анимации</li>
+                  <li class="decor__list"><img src="src/icon/star.svg"
+                      alt="star">
+                    Адаптив</li>
+                  <li class="decor__list"><img src="src/icon/star.svg"
+                      alt="star">
+                    Дизайн
+                    с
+                    вниманием к деталям</li>
+                  <li class="decor__list"><img src="src/icon/star.svg"
+                      alt="star">
+                    Фотосъёмка предметов</li>
+                  <li class="decor__list"><img src="src/icon/star.svg"
+                      alt="star">
+                    Фото
+                    как
+                    стиль и брендинг</li>
+                  <li class="decor__list"><img src="src/icon/star.svg"
+                      alt="star">
+                    Атмосферные кадры с людьми</li>
+                  <li class="decor__list"><img src="src/icon/star.svg"
+                      alt="star">
+                    Уличная съёмка</li>
+                  <li class="decor__list"></li>
+                </ul>
+              </div>
             </div>
-            <hr
-              class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
-            <span
-              class="block text-sm text-center text-gray-500 dark:text-gray-400">©
-              2025 <a href="https://t.me/martiokhoras" target="_blank"
-                class="hover:underline">Excelsio™</a> <br> <span
-                class="text-purple-90">Сделано с любовью.</span></span>
-          </div>
-        </footer>
-      </div>
+          </section>
 
-    </main>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script type="module" src="/src/js/main.js"></script>
-  </body>
-</html>
+          <footer class="m-4 rounded-[20px] shadow-sm dark:bg-dark-08">
+            <div class="w-full max-w-screen-xl p-4 mx-auto md:py-8">
+              <div class="sm:flex sm:items-center sm:justify-between">
+                <a href="https://flowbite.com/"
+                  class="flex items-center mb-4 space-x-3 sm:mb-0 rtl:space-x-reverse">
+                  <img src="/src/icon/logo.png" class="h-8"
+                    alt="Flowbite Logo" />
+                  <span
+                    class="self-center text-2xl font-semibold text-white whitespace-nowrap">ExceIsio</span>
+                </a>
+
+                <ul
+                  class="flex flex-wrap items-center mb-6 text-sm font-medium text-gray-500 sm:mb-0 dark:text-gray-400">
+                  <li>
+                    <a href="#main"
+                      class="hover:underline me-4 md:me-6">Главная</a>
+                  </li>
+                  <li>
+                    <a href="#main__contacts"
+                      class="hover:underline me-4 md:me-6">Обо
+                      мне</a>
+                  </li>
+                  <li>
+                    <a href="#work"
+                      class="hover:underline me-4 md:me-6">Работы</a>
+                  </li>
+                  <li>
+                    <a href="#faq" class="hover:underline">Faq</a>
+                  </li>
+                </ul>
+              </div>
+              <hr
+                class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
+              <span
+                class="block text-sm text-center text-gray-500 dark:text-gray-400">©
+                2025 <a href="https://t.me/martiokhoras" target="_blank"
+                  class="hover:underline">Excelsio™</a> <br> <span
+                  class="text-purple-90">Сделано с любовью.</span></span>
+            </div>
+          </footer>
+        </div>
+
+      </main>
+      <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+      <script type="module" src="/src/js/main.js"></script>
+    </body>
+  </html>

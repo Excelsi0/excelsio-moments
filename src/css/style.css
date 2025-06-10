@@ -136,3 +136,13 @@
 .will {
     will-change: transform;
 }
+
+/* Сброс стандартных стилей details/summary */
+
+details > summary::-webkit-details-marker {
+    display: none;
+}
+
+#faq .cont {
+    overflow: hidden; /* Обрезает всё, что выходит за границы */
+}
